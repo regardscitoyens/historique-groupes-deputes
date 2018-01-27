@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd $(dirname $0)
 mkdir -p .cache data
 
 function escapeit { perl -e 'use URI::Escape; print uri_escape shift();print"\n"' "$1" | sed 's/\s/_/g'; }
@@ -16,12 +17,13 @@ function download {
   cat $cache
 }
 
-for leg in 13 14; do
-  rm -f .cache/historique-groupes-leg$leg.csv
+function scrap_legi {
+  leg=$1
   yr=$((1942 + $leg*5))
   echo
   echo "LEGI $leg:"
   echo "--------"
+  rm -f .cache/historique-groupes-leg$leg.csv
   download "http://www.assemblee-nationale.fr/$leg/qui/modifications.asp" |
    iconv -f "iso8859-15" -t "utf-8" |
    grep "organe" |
@@ -63,5 +65,15 @@ for leg in 13 14; do
   cp {.cache,data}/historique-groupes-leg$leg.csv
   gzip data/historique-groupes-leg$leg.csv
   mv {.cache,data}/historique-groupes-leg$leg.csv
+}
+
+for leg in 13 14; do
+  if ! test -s data/historique-groupes-leg$leg.csv; then
+    scrap_legi $leg
+  fi
+  yr=$((1942 + $leg*5))
+  download https://$yr.nosdeputes.fr/deputes/json > data/deputes-leg$leg.json
+  ./build_deputes.py $leg
 done
+
 
