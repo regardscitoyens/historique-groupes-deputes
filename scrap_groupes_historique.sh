@@ -62,9 +62,11 @@ function scrap_legi {
       done
     done
   done
-  cp {.cache,data}/historique-groupes-leg$leg.csv
+  sort .cache/historique-groupes-leg$leg.csv > data/historique-groupes-leg$leg.csv
+  cp data/historique-groupes-leg$leg.csv{,.sv}
   gzip data/historique-groupes-leg$leg.csv
-  mv {.cache,data}/historique-groupes-leg$leg.csv
+  mv data/historique-groupes-leg$leg.csv{.sv,}
+  rm -f .cache/historique-groupes-leg$leg.csv
 }
 
 for leg in 13 14; do
