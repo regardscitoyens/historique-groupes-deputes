@@ -11,15 +11,18 @@
 ```json
 [{
   "nom": "",
-  "id_AN": "",
-  "id_ND": "",
-  "slug_ND": "",
-  "debut_mandat": "",
-  "fin_mandat": "",
-  "anciens_mandats": "",
-  "groupe_fin": "",
+  "id": "",
+  "id_an": "",
+  "slug": "",
+  "mandat_debut": "",
+  "mandat_fin": "",
+  "anciens_mandats": [{
+    "debut": "",
+    "fin": ""
+  }, ...],
+  "groupe_sigle": "",
   "groupe_historique": [{
-    "acronyme": "",
+    "sigle": "",
     "debut": "",
     "fin": ""
   }, ...]
@@ -37,3 +40,5 @@
 - [ ] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
 - [ ] check objects with info not filled
+
+- [ ] generate sql commands to set last groupe to all MPs ?
