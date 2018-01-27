@@ -17,6 +17,13 @@ function download {
   cat $cache
 }
 
+if ! test -s data/opendata_an.json; then
+  download "http://data.assemblee-nationale.fr/static/openData/repository/AMO/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip" > data/opendata_an.json.zip
+  unzip data/opendata_an.json.zip
+  mv AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json data/opendata_an.json
+  rm -f data/opendata_an.json.zip
+fi
+
 function scrap_legi {
   leg=$1
   yr=$((1942 + $leg*5))
@@ -24,13 +31,13 @@ function scrap_legi {
   echo "LEGI $leg:"
   echo "--------"
   rm -f .cache/historique-groupes-leg$leg.csv
-  download "http://www.assemblee-nationale.fr/$leg/qui/modifications.asp" |
-   iconv -f "iso8859-15" -t "utf-8" |
-   grep "organe" |
-   sed -r 's/^.*href="([^"]+)".*$/\1/' |
-   sed 's|^/|http://www.assemblee-nationale.fr/|' |
-   sort -u |
-   while read url; do
+   python -m json.tool data/opendata_an.json |
+   grep '^                    "@xsi:type": "GroupePolitique_type",' -A 20 |
+   grep "legislature.*$leg" -A 20 |
+   grep "PO" |
+   sed "s/[^0-9]//g" |
+   while read organe; do
+    url="http://www.assemblee-nationale.fr/qui/xml/organe.asp?id_organe=/$leg/tribun/xml/xml/organes/$organe.xml"
     curl -sLI $url |
      grep '^Location:' |
      sed 's/\r//g' |
