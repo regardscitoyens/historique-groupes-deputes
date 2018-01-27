@@ -1,6 +1,6 @@
 #!/bin/bash
 
-mkdir -p .cache 
+mkdir -p .cache data
 
 function escapeit { perl -e 'use URI::Escape; print uri_escape shift();print"\n"' "$1" | sed 's/\s/_/g'; }
 function download {
@@ -60,4 +60,8 @@ for leg in 13 14; do
       done
     done
   done
+  cp {.cache,data}/historique-groupes-leg$leg.csv
+  gzip data/historique-groupes-leg$leg.csv
+  mv {.cache,data}/historique-groupes-leg$leg.csv
 done
+
