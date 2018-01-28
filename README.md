@@ -6,7 +6,7 @@
 
 - [X] scrap daily list of MPs for each group
 
-- [ ] build list of MPs such as:
+- [X] build list of MPs such as:
 
 ```json
 [{
@@ -21,7 +21,7 @@
     "fin": ""
   }, ...],
   "groupe_sigle": "",
-  "groupe_historique": [{
+  "groupes_historique": [{
     "sigle": "",
     "debut": "",
     "fin": ""
