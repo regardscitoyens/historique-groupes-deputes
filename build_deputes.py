@@ -153,7 +153,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     results.append(depute)
 
     # Complete missing
-    for depute in [d for d in deputes.values() if "groupes_historique" not in d]:
+    for depute in [d for d in slugs.values() if "groupes_historique" not in d]:
         print "WARNING missing data for", depute["nom"], depute["anciens_mandats"], depute["groupe_sigle"], "OMC_PA"+depute["id_an"]
 
     # Write data
