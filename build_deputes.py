@@ -103,7 +103,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
                 depute["groupes_historique"].append({
                   "sigle": "NI",
                   "debut": depute["anciens_mandats"][0]["debut"],
-                  "fin": substract_day(dat)
+                  "fin": min(depute["anciens_mandats"][0]["fin"], substract_day(dat))
                 })
             oldgpe = None
             groupe = None
@@ -113,7 +113,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
             curdep = dep
         if not any(dat >= a["debut"] and dat <= a["fin"] for a in depute["anciens_mandats"]):
             continue
-        if gpe != curgpe:
+        if gpe != curgpe or curdat != substract_day(dat):
             if dat == curdat and gpe == oldgpe and olddat == substract_day(dat):
                 continue
             if groupe:
@@ -152,13 +152,20 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
         if d["groupes_historique"][-1]["fin"] != d["anciens_mandats"][-1]["fin"]:
             print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], d["anciens_mandats"][-1]["fin"]
 
+        a = 0
         dat = ""
+        am = d["anciens_mandats"]
         for h in d["groupes_historique"]:
             if h["debut"] > h["fin"]:
                 print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
             if not h["debut"] > dat:
                 print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
             dat = h["fin"]
+
+            if dat > am[a]["fin"]:
+                print "WARNING, groupe after mandat for", d["nom"], h, am[a]
+            elif dat == am[a]["fin"]:
+                a += 1
 
 
 
