@@ -134,7 +134,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
     depute["groupes_historique"].append(groupe)
     results.append(depute)
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as f:
-        json.dump(results, f, indent=2)
+        print >> f, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
 
     # TEST results
     for d in results:
