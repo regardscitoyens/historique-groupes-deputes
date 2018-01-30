@@ -39,7 +39,7 @@
 
 - [X] create missing _groupe_acronyme fields in ND mysql on Amendement/ParlAmendement/Intervention/ParlementaireTexteLoi/Presence/QuestionEcrite
 
-- [ ] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
+- [X] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
 - [ ] check objects with info not filled
 

@@ -5,11 +5,13 @@ import os, sys, csv, json
 from pprint import pprint
 from datetime import date, datetime, timedelta
 
+
 leg = int(sys.argv[1])
 assert leg in [13,14]
 
-leg_start = "%d-06-20" % (int(leg)*5 + 1942)
-leg_end = ("%d-06-%s" % (int(leg)*5 + 1947, 19 if leg == 13 else 20)).decode("utf-8")
+leg_start = "%d-06-20" % (leg * 5 + 1942)
+leg_end = ("%d-06-%s" % (leg * 5 + 1947, leg + 6)).decode("utf-8")
+
 
 def parse_date(dat):
     if not dat:
@@ -189,13 +191,9 @@ for d in results:
         print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
 
 
-# TODO:
-# - handle JOIN parl_amdmt where numero_signataire == 1 for amdt missing auteur_id (leg 13)
-
-
 # WRITE SQL
 sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
-join = " LEFT JOIN %s o ON %s_id = o.id"
+join = " LEFT JOIN %s o ON o.id = %s_id"
 for table in [
   "amendement",
   "parlementaire_amendement",
@@ -204,13 +202,20 @@ for table in [
   "intervention",
   "question_ecrite",
 ]:
-    ref_field = "auteur" if table == "amendement" else "parlementaire"
+    ref_field = "parlementaire"
     lj = ""
+    extra = None
     if table.startswith("parlementaire_"):
         tbl = table.replace("parlementaire_", "")
         lj = join % (tbl, tbl)
+    elif table == "amendement":
+        ref_field = "auteur"
+        if leg == 13:
+            lj = " LEFT JOIN parlementaire_amendement o ON o.amendement_id = id"
+            extra = "o.numero_signataire = 1 AND o.parlementaire"
+
     with open(os.path.join("sql", "update-%s-leg%s.sql" % (table, leg)), "w") as sqlf:
         for d in results:
             for h in d["groupes_historique"]:
-                print >> sqlf, sql % (table, lj, ref_field, h["sigle"], ref_field, d["id"], h["debut"], h["fin"])
+                print >> sqlf, sql % (table, lj, ref_field, h["sigle"], extra or ref_field, d["id"], h["debut"], h["fin"])
 
