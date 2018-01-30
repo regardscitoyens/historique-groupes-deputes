@@ -41,6 +41,8 @@
 
 - [X] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
+- [ ] fix still missing deputes (ex P. Roy)
+
 - [ ] check objects with info not filled
 
 - [ ] generate sql commands to set last groupe to all MPs ?
