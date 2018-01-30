@@ -29,7 +29,10 @@ def parse_ancien_mandat(mandat):
       "fin": parse_date(m[1])
     }
 
+
+# READ PARLS
 deputes = {}
+slugs = {}
 with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
     for depute in json.load(jsonf)["deputes"]:
         dep = depute["depute"]
@@ -49,6 +52,15 @@ with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
              "fin": dep["mandat_fin"]
             }]
         deputes["OMC_PA%s" % dep["id_an"]] = dep
+        slugs[dep["slug"]] = dep
+
+with open(os.path.join("data", "senateurs.json")) as jsonf:
+    for senateur in json.load(jsonf)["senateurs"]:
+        sen = senateur["senateur"]
+        senid = sen["url_institution"].replace("http://www.senat.fr/", "")
+        if sen["slug"] in slugs:
+            deputes[senid] = slugs[sen["slug"]]
+
 
 siglize = {
   "Gauche démocrate et républicaine": "GDR",
@@ -72,6 +84,7 @@ max_date = {
   "Rassemblement - Union pour un Mouvement Populaire": "2013-01-15",
   "Union pour un Mouvement Populaire": "2015-06-01"
 }
+
 
 # BUILD DATA
 with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
@@ -138,6 +151,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
         print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
 
+
 # CHECK RESULTS
 for d in results:
     am = d["anciens_mandats"]
@@ -176,7 +190,6 @@ for d in results:
 
 
 # TODO:
-# - match senateurs with corresponding deputes
 # - handle JOIN parl_amdmt where numero_signataire == 1 for amdt missing auteur_id (leg 13)
 
 

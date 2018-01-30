@@ -27499,5 +27499,915 @@
     "num_deptmt": "60", 
     "nom_de_famille": "Dassault", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Avocat au Barreau de Paris", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jerome-bignon/json", 
+    "nb_mandats": 2, 
+    "id": 526, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Neuilly-sur-Seine (Hauts-de-Seine)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jérôme Bignon", 
+    "sites_web": [
+      {
+        "site": "http://www.jeromebignon.info"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Somme", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "106", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jerome-bignon", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/513.asp", 
+    "date_naissance": "1949-01-01", 
+    "slug": "jerome-bignon", 
+    "id_an": "513", 
+    "prenom": "Jérôme", 
+    "num_deptmt": "80", 
+    "nom_de_famille": "Bignon", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Avocat", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francois-calvet/json", 
+    "nb_mandats": 3, 
+    "id": 564, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Perpignan (Pyrénées-Orientales)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "François Calvet", 
+    "sites_web": [
+      {
+        "site": "http://www.francois-calvet.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Pyrénées-Orientales", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "146", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francois-calvet", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/716.asp", 
+    "date_naissance": "1953-04-01", 
+    "slug": "francois-calvet", 
+    "id_an": "716", 
+    "prenom": "François", 
+    "num_deptmt": "66", 
+    "nom_de_famille": "Calvet", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Inspecteur principal des impôts", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/thierry-carcenac/json", 
+    "nb_mandats": 2, 
+    "id": 142, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Lescure-d'Albigeois (Tarn)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Thierry Carcenac", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Tarn", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "458", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/thierry-carcenac", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/733.asp", 
+    "date_naissance": "1950-12-19", 
+    "slug": "thierry-carcenac", 
+    "id_an": "733", 
+    "prenom": "Thierry", 
+    "num_deptmt": "81", 
+    "nom_de_famille": "Carcenac", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Ancien directeur d'une société de recrutement", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/marc-philippe-daubresse/json", 
+    "nb_mandats": 2, 
+    "id": 557, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Lille (Nord)", 
+    "mandat_debut": "2010-12-14", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2010-04-23"
+      }, 
+      {
+        "debut": "2010-12-14", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2010-04-23"
+      }, 
+      {
+        "debut": "2010-12-14", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Marc-Philippe Daubresse", 
+    "sites_web": [
+      {
+        "site": "http://www.mpdaubresse.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Nord", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "26", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/marc-philippe-daubresse", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1001.asp", 
+    "date_naissance": "1953-08-01", 
+    "slug": "marc-philippe-daubresse", 
+    "id_an": "1001", 
+    "prenom": "Marc-Philippe", 
+    "num_deptmt": "59", 
+    "nom_de_famille": "Daubresse", 
+    "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Professeur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-pierre-decool/json", 
+    "nb_mandats": 3, 
+    "id": 398, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Bourbourg (Nord)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jean-Pierre Decool", 
+    "sites_web": [
+      {
+        "site": "http://www.jeanpierredecool.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Nord", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "35", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-pierre-decool", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/267762.asp", 
+    "date_naissance": "1952-10-19", 
+    "slug": "jean-pierre-decool", 
+    "id_an": "267762", 
+    "prenom": "Jean-Pierre", 
+    "num_deptmt": "59", 
+    "nom_de_famille": "Decool", 
+    "num_circo": 14
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Administrateur de biens", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/pierre-frogier/json", 
+    "nb_mandats": 2, 
+    "id": 54, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Nouméa (Nouvelle-Calédonie)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "Pierre Frogier", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Nouvelle-Calédonie", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "277", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/pierre-frogier", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1375.asp", 
+    "date_naissance": "1950-11-16", 
+    "slug": "pierre-frogier", 
+    "id_an": "1375", 
+    "prenom": "Pierre", 
+    "num_deptmt": "988", 
+    "nom_de_famille": "Frogier", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Attaché parlementaire", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-pierre-grand/json", 
+    "nb_mandats": 3, 
+    "id": 610, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Montpellier (Hérault)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jean-Pierre Grand", 
+    "sites_web": [
+      {
+        "site": "http://www.jpgrand.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Hérault", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "75", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-pierre-grand", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/267907.asp", 
+    "date_naissance": "1950-11-18", 
+    "slug": "jean-pierre-grand", 
+    "id_an": "267907", 
+    "prenom": "Jean-Pierre", 
+    "num_deptmt": "34", 
+    "nom_de_famille": "Grand", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Fonctionnaire territorial", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francois-grosdidier/json", 
+    "nb_mandats": 3, 
+    "id": 11, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Metz (Moselle)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "François Grosdidier", 
+    "sites_web": [
+      {
+        "site": "http://www.fgrosdidier.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Moselle", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "215", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francois-grosdidier", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/1562.asp", 
+    "date_naissance": "1961-02-25", 
+    "slug": "francois-grosdidier", 
+    "id_an": "1562", 
+    "prenom": "François", 
+    "num_deptmt": "57", 
+    "nom_de_famille": "Grosdidier", 
+    "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Professeur agrégé à l'Université", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jacques-grosperrin/json", 
+    "nb_mandats": 2, 
+    "id": 350, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Baden-Baden (Allemagne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jacques Grosperrin", 
+    "sites_web": [
+      {
+        "site": "http://www.grosperrin.net"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Doubs", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "48", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jacques-grosperrin", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/331381.asp", 
+    "date_naissance": "1955-10-17", 
+    "slug": "jacques-grosperrin", 
+    "id_an": "331381", 
+    "prenom": "Jacques", 
+    "num_deptmt": "25", 
+    "nom_de_famille": "Grosperrin", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Directeur de ressources humaines", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/pascale-gruny/json", 
+    "nb_mandats": 3, 
+    "id": 314, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Cambrai (Nord)", 
+    "mandat_debut": "2010-12-15", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-07-20", 
+        "fin": "2009-02-15"
+      }, 
+      {
+        "debut": "2010-12-15", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-07-20", 
+        "sigle": "NI", 
+        "fin": "2007-07-23"
+      }, 
+      {
+        "debut": "2007-07-24", 
+        "sigle": "UMP", 
+        "fin": "2009-02-15"
+      }, 
+      {
+        "debut": "2010-12-15", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Pascale Gruny", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Aisne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "20", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/pascale-gruny", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267081.asp", 
+    "date_naissance": "1960-02-18", 
+    "slug": "pascale-gruny", 
+    "id_an": "267081", 
+    "prenom": "Pascale", 
+    "num_deptmt": "02", 
+    "nom_de_famille": "Gruny", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Editeur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/alain-joyandet/json", 
+    "nb_mandats": 2, 
+    "id": 44, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Dijon (Côte-d'Or)", 
+    "mandat_debut": "2010-08-05", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2008-04-19"
+      }, 
+      {
+        "debut": "2010-08-05", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2008-04-19"
+      }, 
+      {
+        "debut": "2010-09-01", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Alain Joyandet", 
+    "sites_web": [
+      {
+        "site": "http://www.joyandet.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Haute-Saône", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "263", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/alain-joyandet", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1744.asp", 
+    "date_naissance": "1954-01-15", 
+    "slug": "alain-joyandet", 
+    "id_an": "1744", 
+    "prenom": "Alain", 
+    "num_deptmt": "70", 
+    "nom_de_famille": "Joyandet", 
+    "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Horticulteur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jacques-le-nay/json", 
+    "nb_mandats": 2, 
+    "id": 449, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Plouay (Morbihan)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jacques Le Nay", 
+    "sites_web": [
+      {
+        "site": "http://www.jacques-lenay.org"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Morbihan", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "335", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jacques-le-nay", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1883.asp", 
+    "date_naissance": "1949-11-19", 
+    "slug": "jacques-le-nay", 
+    "id_an": "1883", 
+    "prenom": "Jacques", 
+    "num_deptmt": "56", 
+    "nom_de_famille": "Le Nay", 
+    "num_circo": 6
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Fonctionnaire territorial", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/victorin-lurel/json", 
+    "nb_mandats": 2, 
+    "id": 410, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Vieux-Habitants (Guadeloupe)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Victorin Lurel", 
+    "sites_web": [
+      {
+        "site": "http://www.lurel.parti-socialiste.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Guadeloupe", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "505", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/victorin-lurel", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/268048.asp", 
+    "date_naissance": "1951-08-20", 
+    "slug": "victorin-lurel", 
+    "id_an": "268048", 
+    "prenom": "Victorin", 
+    "num_deptmt": "971", 
+    "nom_de_famille": "Lurel", 
+    "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Retraité de l'enseignement", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/alain-marc/json", 
+    "nb_mandats": 2, 
+    "id": 89, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Paris (XIV)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Alain Marc", 
+    "sites_web": [
+      {
+        "site": "http://www.alainmarc.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Aveyron", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "30", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/alain-marc", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267512.asp", 
+    "date_naissance": "1957-01-29", 
+    "slug": "alain-marc", 
+    "id_an": "267512", 
+    "prenom": "Alain", 
+    "num_deptmt": "12", 
+    "nom_de_famille": "Marc", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Directeur informatique", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-marie-morisset/json", 
+    "nb_mandats": 2, 
+    "id": 594, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Parthenay (Deux-Sèvres)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Jean-Marie Morisset", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Deux-Sèvres", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "243", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-marie-morisset", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2237.asp", 
+    "date_naissance": "1947-08-18", 
+    "slug": "jean-marie-morisset", 
+    "id_an": "2237", 
+    "prenom": "Jean-Marie", 
+    "num_deptmt": "79", 
+    "nom_de_famille": "Morisset", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Professeur de collège (en détachement depuis 1997)", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/marie-francoise-perol-dumont/json", 
+    "nb_mandats": 2, 
+    "id": 233, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Nedde (Haute-Vienne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Marie-Françoise Pérol-Dumont", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Haute-Vienne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "428", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/marie-francoise-perol-dumont", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/2371.asp", 
+    "date_naissance": "1952-05-26", 
+    "slug": "marie-francoise-perol-dumont", 
+    "id_an": "2371", 
+    "prenom": "Marie-Françoise", 
+    "num_deptmt": "87", 
+    "nom_de_famille": "Pérol-Dumont", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Cadre de chambre de commerce et d'industrie", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/christophe-priou/json", 
+    "nb_mandats": 1, 
+    "id": 511, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Nantes (Loire-Atlantique)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Christophe Priou", 
+    "sites_web": [
+      {
+        "site": "http://www.christophepriou.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Loire-Atlantique", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "304", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/christophe-priou", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267728.asp", 
+    "date_naissance": "1958-05-02", 
+    "slug": "christophe-priou", 
+    "id_an": "267728", 
+    "prenom": "Christophe", 
+    "num_deptmt": "44", 
+    "nom_de_famille": "Priou", 
+    "num_circo": 7
+  }, 
+  {
+    "mandat_fin": "2012-06-19", 
+    "profession": "Agriculteur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/michel-raison/json", 
+    "nb_mandats": 2, 
+    "id": 359, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Besançon (Doubs)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2012-06-19"
+      }
+    ], 
+    "nom": "Michel Raison", 
+    "sites_web": [
+      {
+        "site": "http://www.michelraison.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Haute-Saône", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "2", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/michel-raison", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267018.asp", 
+    "date_naissance": "1949-11-05", 
+    "slug": "michel-raison", 
+    "id_an": "267018", 
+    "prenom": "Michel", 
+    "num_deptmt": "70", 
+    "nom_de_famille": "Raison", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Avocat", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/andre-vallini/json", 
+    "nb_mandats": 2, 
+    "id": 507, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Tullins (Isère)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2007-06-20", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "André Vallini", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Isère", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "498", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/andre-vallini", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2870.asp", 
+    "date_naissance": "1956-07-15", 
+    "slug": "andre-vallini", 
+    "id_an": "2870", 
+    "prenom": "André", 
+    "num_deptmt": "38", 
+    "nom_de_famille": "Vallini", 
+    "num_circo": 9
   }
 ]

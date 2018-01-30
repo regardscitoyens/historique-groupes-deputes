@@ -1,4 +1,6 @@
 .cache
+data/senateurs.json
 data/deputes-leg*.json
 data/historique-groupes-leg*.csv
 data/opendata_an.json
+sql/update-*.sql

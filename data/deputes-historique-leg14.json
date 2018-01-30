@@ -35647,5 +35647,466 @@
     "num_deptmt": "60", 
     "nom_de_famille": "Dassault", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2017-06-20", 
+    "twitter": "gchevrollier", 
+    "profession": "Directeur de programme immobilier", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/guillaume-chevrollier/json", 
+    "nb_mandats": 2, 
+    "id": 376, 
+    "groupe_sigle": "LR", 
+    "lieu_naissance": "Chateau Gontier (Mayenne)", 
+    "mandat_debut": "2012-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "UMP", 
+        "fin": "2012-11-26"
+      }, 
+      {
+        "debut": "2012-11-27", 
+        "sigle": "RUMP", 
+        "fin": "2013-01-15"
+      }, 
+      {
+        "debut": "2013-01-16", 
+        "sigle": "UMP", 
+        "fin": "2015-06-01"
+      }, 
+      {
+        "debut": "2015-06-02", 
+        "sigle": "LR", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "nom": "Guillaume Chevrollier", 
+    "sites_web": [
+      {
+        "site": "https://twitter.com/gchevrollier"
+      }, 
+      {
+        "site": "http://www.guillaumechevrollier.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Mayenne", 
+    "parti_ratt_financier": "Les Républicains", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "43", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/guillaume-chevrollier", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA607489", 
+    "date_naissance": "1974-10-27", 
+    "slug": "guillaume-chevrollier", 
+    "id_an": "607489", 
+    "prenom": "Guillaume", 
+    "num_deptmt": "53", 
+    "nom_de_famille": "Chevrollier", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2017-06-20", 
+    "twitter": "DAUBRESSE_MP", 
+    "profession": "Ancien directeur d'une société de recrutement", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/marc-philippe-daubresse/json", 
+    "nb_mandats": 2, 
+    "id": 49, 
+    "groupe_sigle": "LR", 
+    "lieu_naissance": "Lille (Nord)", 
+    "mandat_debut": "2012-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "UMP", 
+        "fin": "2015-06-01"
+      }, 
+      {
+        "debut": "2015-06-02", 
+        "sigle": "LR", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "nom": "Marc-Philippe Daubresse", 
+    "sites_web": [
+      {
+        "site": "http://www.mpdaubresse.com"
+      }, 
+      {
+        "site": "https://twitter.com/DAUBRESSE_MP"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Nord", 
+    "parti_ratt_financier": "Les Républicains", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "26", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/marc-philippe-daubresse", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA1001", 
+    "date_naissance": "1953-08-01", 
+    "slug": "marc-philippe-daubresse", 
+    "id_an": "1001", 
+    "prenom": "Marc-Philippe", 
+    "num_deptmt": "59", 
+    "nom_de_famille": "Daubresse", 
+    "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2017-06-20", 
+    "twitter": "jpdecool", 
+    "profession": "Professeur", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/jean-pierre-decool/json", 
+    "nb_mandats": 2, 
+    "id": 120, 
+    "groupe_sigle": "LR", 
+    "lieu_naissance": "Bourbourg (Nord)", 
+    "mandat_debut": "2012-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "UMP", 
+        "fin": "2012-11-29"
+      }, 
+      {
+        "debut": "2012-11-30", 
+        "sigle": "RUMP", 
+        "fin": "2013-01-15"
+      }, 
+      {
+        "debut": "2013-01-16", 
+        "sigle": "UMP", 
+        "fin": "2015-06-01"
+      }, 
+      {
+        "debut": "2015-06-02", 
+        "sigle": "LR", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "nom": "Jean-Pierre Decool", 
+    "sites_web": [
+      {
+        "site": "http://www.jeanpierredecool.com"
+      }, 
+      {
+        "site": "https://twitter.com/jpdecool"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Nord", 
+    "parti_ratt_financier": "Les Républicains", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "35", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/jean-pierre-decool", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA267762", 
+    "date_naissance": "1952-10-19", 
+    "slug": "jean-pierre-decool", 
+    "id_an": "267762", 
+    "prenom": "Jean-Pierre", 
+    "num_deptmt": "59", 
+    "nom_de_famille": "Decool", 
+    "num_circo": 14
+  }, 
+  {
+    "mandat_fin": "2017-03-29", 
+    "twitter": "", 
+    "profession": null, 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/monique-lubin/json", 
+    "nb_mandats": 1, 
+    "id": 646, 
+    "groupe_sigle": "NI", 
+    "lieu_naissance": null, 
+    "mandat_debut": "2017-03-22", 
+    "anciens_mandats": [
+      {
+        "debut": "2017-03-22", 
+        "fin": "2017-03-29"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2017-03-22", 
+        "sigle": "NI", 
+        "fin": "2017-03-29"
+      }
+    ], 
+    "nom": "Monique Lubin", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Landes", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "432", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/monique-lubin", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA342564", 
+    "date_naissance": "1963-07-16", 
+    "slug": "monique-lubin", 
+    "id_an": "342564", 
+    "prenom": "Monique", 
+    "num_deptmt": "40", 
+    "nom_de_famille": "Lubin", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2017-06-20", 
+    "twitter": "VictorinLurel", 
+    "profession": "Fonctionnaire retraité", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/victorin-lurel/json", 
+    "nb_mandats": 2, 
+    "id": 51, 
+    "groupe_sigle": "SER", 
+    "lieu_naissance": "Vieux-Habitants (Guadeloupe)", 
+    "mandat_debut": "2014-05-03", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2012-07-21"
+      }, 
+      {
+        "debut": "2014-05-03", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "SRC", 
+        "fin": "2012-07-21"
+      }, 
+      {
+        "debut": "2014-05-03", 
+        "sigle": "NI", 
+        "fin": "2014-05-04"
+      }, 
+      {
+        "debut": "2014-05-05", 
+        "sigle": "SRC", 
+        "fin": "2016-05-24"
+      }, 
+      {
+        "debut": "2016-05-25", 
+        "sigle": "SER", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "nom": "Victorin Lurel", 
+    "sites_web": [
+      {
+        "site": "https://twitter.com/VictorinLurel"
+      }, 
+      {
+        "site": "http://www.lurel.parti-socialiste.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Guadeloupe", 
+    "parti_ratt_financier": "Parti socialiste", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "256", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/victorin-lurel", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA268048", 
+    "date_naissance": "1951-08-20", 
+    "slug": "victorin-lurel", 
+    "id_an": "268048", 
+    "prenom": "Victorin", 
+    "num_deptmt": "971", 
+    "nom_de_famille": "Lurel", 
+    "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2014-09-30", 
+    "twitter": "", 
+    "profession": "Retraité de l'enseignement", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/alain-marc/json", 
+    "nb_mandats": 3, 
+    "id": 261, 
+    "groupe_sigle": "", 
+    "lieu_naissance": "Paris (XIV) (France)", 
+    "mandat_debut": "2012-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2014-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "UMP", 
+        "fin": "2012-11-26"
+      }, 
+      {
+        "debut": "2012-11-27", 
+        "sigle": "RUMP", 
+        "fin": "2013-01-15"
+      }, 
+      {
+        "debut": "2013-01-16", 
+        "sigle": "UMP", 
+        "fin": "2014-09-30"
+      }
+    ], 
+    "nom": "Alain Marc", 
+    "sites_web": [
+      {
+        "site": "http://www.alainmarc.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Aveyron", 
+    "parti_ratt_financier": "Union pour un Mouvement Populaire", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "32", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/alain-marc", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA267512", 
+    "date_naissance": "1957-01-29", 
+    "slug": "alain-marc", 
+    "id_an": "267512", 
+    "prenom": "Alain", 
+    "num_deptmt": "12", 
+    "nom_de_famille": "Marc", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2014-05-02", 
+    "twitter": "", 
+    "profession": null, 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/franck-montauge/json", 
+    "nb_mandats": 1, 
+    "id": 610, 
+    "groupe_sigle": "", 
+    "lieu_naissance": "Condom (Gers)", 
+    "mandat_debut": "2013-08-03", 
+    "anciens_mandats": [
+      {
+        "debut": "2013-08-03", 
+        "fin": "2014-05-02"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2013-08-03", 
+        "sigle": "SRC", 
+        "fin": "2014-05-02"
+      }
+    ], 
+    "nom": "Franck Montaugé", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Gers", 
+    "parti_ratt_financier": "Parti socialiste", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "629", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/franck-montauge", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA643211", 
+    "date_naissance": "1961-09-14", 
+    "slug": "franck-montauge", 
+    "id_an": "643211", 
+    "prenom": "Franck", 
+    "num_deptmt": "32", 
+    "nom_de_famille": "Montaugé", 
+    "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2017-06-20", 
+    "twitter": "", 
+    "profession": "Cadre de chambre de commerce et d'industrie", 
+    "url_nosdeputes_api": "https://2012-2017.nosdeputes.fr/christophe-priou/json", 
+    "nb_mandats": 2, 
+    "id": 288, 
+    "groupe_sigle": "LR", 
+    "lieu_naissance": "Nantes (Loire-Atlantique)", 
+    "mandat_debut": "2012-06-20", 
+    "anciens_mandats": [
+      {
+        "debut": "2012-06-20", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2012-06-20", 
+        "sigle": "NI", 
+        "fin": "2012-06-25"
+      }, 
+      {
+        "debut": "2012-06-26", 
+        "sigle": "UMP", 
+        "fin": "2012-11-26"
+      }, 
+      {
+        "debut": "2012-11-27", 
+        "sigle": "RUMP", 
+        "fin": "2013-01-15"
+      }, 
+      {
+        "debut": "2013-01-16", 
+        "sigle": "UMP", 
+        "fin": "2015-06-01"
+      }, 
+      {
+        "debut": "2015-06-02", 
+        "sigle": "LR", 
+        "fin": "2017-06-20"
+      }
+    ], 
+    "nom": "Christophe Priou", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Loire-Atlantique", 
+    "parti_ratt_financier": "Les Républicains", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "17", 
+    "url_nosdeputes": "https://2012-2017.nosdeputes.fr/christophe-priou", 
+    "url_an": "http://www2.assemblee-nationale.fr/deputes/fiche/OMC_PA267728", 
+    "date_naissance": "1958-05-02", 
+    "slug": "christophe-priou", 
+    "id_an": "267728", 
+    "prenom": "Christophe", 
+    "num_deptmt": "44", 
+    "nom_de_famille": "Priou", 
+    "num_circo": 7
   }
 ]

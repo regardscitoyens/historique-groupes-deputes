@@ -35,9 +35,9 @@
 
 - [X] check missing/extra periodes
 
-- [ ] create missing _groupe_acronyme fields in ND mysql on Amendement/Intervention/ParlementaireTexteLoi/QuestionEcrite
+- [X] fix missing deputes listed as senateurs
 
-- [ ] fix missing deputes listed as senateurs
+- [X] create missing _groupe_acronyme fields in ND mysql on Amendement/ParlAmendement/Intervention/ParlementaireTexteLoi/Presence/QuestionEcrite
 
 - [ ] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 

@@ -76,6 +76,7 @@ function scrap_legi {
   rm -f .cache/historique-groupes-leg$leg.csv
 }
 
+download https://www.nossenateurs.fr/senateurs/json > data/senateurs.json
 for leg in 13 14; do
   if ! test -s data/historique-groupes-leg$leg.csv; then
     scrap_legi $leg
