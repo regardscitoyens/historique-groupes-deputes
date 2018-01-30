@@ -30,8 +30,8 @@ def parse_ancien_mandat(mandat):
     }
 
 deputes = {}
-with open(os.path.join("data", "deputes-leg%s.json" % leg)) as f:
-    for depute in json.load(f)["deputes"]:
+with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
+    for depute in json.load(jsonf)["deputes"]:
         dep = depute["depute"]
         if not dep["mandat_fin"]:
             dep["mandat_fin"] = leg_end
@@ -73,7 +73,8 @@ max_date = {
   "Union pour un Mouvement Populaire": "2015-06-01"
 }
 
-with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
+# BUILD DATA
+with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     curdat = None
     curgpe = None
     curdep = None
@@ -82,7 +83,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
     oldgpe = None
     olddat = None
     results = []
-    for r in csv.reader(f, delimiter=";"):
+    for r in csv.reader(csvf, delimiter=";"):
         dep = r[0]
         dat = r[1]
         gpe = siglize[r[2]]
@@ -134,41 +135,69 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
     groupe["fin"] = max(curdat, max([a["fin"] for a in depute["anciens_mandats"] if not curdat > a["fin"]]))
     depute["groupes_historique"].append(groupe)
     results.append(depute)
-    with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as f:
-        print >> f, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
+    with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
+        print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
 
-    # TEST results
-    for d in results:
-        am = d["anciens_mandats"]
+# CHECK RESULTS
+for d in results:
+    am = d["anciens_mandats"]
 
-        if not am:
-            print "WARNING, no mandats for", d["nom"]
-        if am[-1]["debut"] != d["mandat_debut"]:
-            print "WARNING, first date last mandat for", d["nom"], am[-1]["debut"], d["mandat_debut"]
-        if am[-1]["fin"] != d["mandat_fin"]:
-            print "WARNING, last date last mandat for", d["nom"], am[-1]["fin"], d["mandat_fin"]
-        if not d["groupes_historique"]:
-            print "WARNING, no historique for", d["nom"]
-        if d["groupes_historique"][0]["debut"] != am[0]["debut"]:
-            print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], am[0]["debut"]
-        if d["groupes_historique"][-1]["fin"] != am[-1]["fin"]:
-            print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], am[-1]["fin"]
+    if not am:
+        print "WARNING, no mandats for", d["nom"]
+    if am[-1]["debut"] != d["mandat_debut"]:
+        print "WARNING, first date last mandat for", d["nom"], am[-1]["debut"], d["mandat_debut"]
+    if am[-1]["fin"] != d["mandat_fin"]:
+        print "WARNING, last date last mandat for", d["nom"], am[-1]["fin"], d["mandat_fin"]
+    if not d["groupes_historique"]:
+        print "WARNING, no historique for", d["nom"]
+    if d["groupes_historique"][0]["debut"] != am[0]["debut"]:
+        print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], am[0]["debut"]
+    if d["groupes_historique"][-1]["fin"] != am[-1]["fin"]:
+        print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], am[-1]["fin"]
 
-        a = 0
-        dat = ""
-        for h in d["groupes_historique"]:
-            if h["debut"] < am[a]["debut"]:
-                print "WARNING, groupe before mandat for", d["nom"], h, am[a]
-            if h["fin"] > am[a]["fin"]:
-                print "WARNING, groupe after mandat for", d["nom"], h, am[a]
-            elif h["fin"] == am[a]["fin"]:
-                a += 1
+    a = 0
+    dat = ""
+    for h in d["groupes_historique"]:
+        if h["debut"] < am[a]["debut"]:
+            print "WARNING, groupe before mandat for", d["nom"], h, am[a]
+        if h["fin"] > am[a]["fin"]:
+            print "WARNING, groupe after mandat for", d["nom"], h, am[a]
+        elif h["fin"] == am[a]["fin"]:
+            a += 1
 
-            if h["debut"] > h["fin"]:
-                print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
-            if not h["debut"] > dat:
-                print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
-            dat = h["fin"]
-        if a != len(am):
-            print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
+        if h["debut"] > h["fin"]:
+            print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
+        if not h["debut"] > dat:
+            print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
+        dat = h["fin"]
+
+    if a != len(am):
+        print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
+
+
+# TODO:
+# - match senateurs with corresponding deputes
+# - handle JOIN parl_amdmt where numero_signataire == 1 for amdt missing auteur_id (leg 13)
+
+
+# WRITE SQL
+sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
+join = " LEFT JOIN %s o ON %s_id = o.id"
+for table in [
+  "amendement",
+  "parlementaire_amendement",
+  "parlementaire_texteloi",
+  "presence",
+  "intervention",
+  "question_ecrite",
+]:
+    ref_field = "auteur" if table == "amendement" else "parlementaire"
+    lj = ""
+    if table.startswith("parlementaire_"):
+        tbl = table.replace("parlementaire_", "")
+        lj = join % (tbl, tbl)
+    with open(os.path.join("sql", "update-%s-leg%s.sql" % (table, leg)), "w") as sqlf:
+        for d in results:
+            for h in d["groupes_historique"]:
+                print >> sqlf, sql % (table, lj, ref_field, h["sigle"], ref_field, d["id"], h["debut"], h["fin"])
 
