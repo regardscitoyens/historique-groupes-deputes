@@ -56,13 +56,13 @@ function scrap_legi {
          sed -r 's/\s+au\s+[0-9].*$//'
         )
         tot=$(download "$gpeurl/$dat" |
-         grep "href=.*deputes/fiche" |
+         grep "href=.*\(/senateur\|deputes/fiche\)" |
          wc -l
         )
         echo "- $gpe $dat ($tot)"
         download "$gpeurl/$dat" |
-         grep "href=.*deputes/fiche" |
-         sed -r 's|^.*/(OMC_[^"]+)".*$|\1|' |
+         grep "href=.*\(/senateur\|deputes/fiche\)" |
+         sed -r 's#^.*/((OMC_|senateur/)[^"]+)".*$#\1#' |
          while read depid; do
           echo "$depid;$dat;$gpe;$gpeurl/$dat" >> .cache/historique-groupes-leg$leg.csv
         done
@@ -71,7 +71,7 @@ function scrap_legi {
   done
   sort .cache/historique-groupes-leg$leg.csv > data/historique-groupes-leg$leg.csv
   cp data/historique-groupes-leg$leg.csv{,.sv}
-  gzip data/historique-groupes-leg$leg.csv
+  gzip -f data/historique-groupes-leg$leg.csv
   mv data/historique-groupes-leg$leg.csv{.sv,}
   rm -f .cache/historique-groupes-leg$leg.csv
 }

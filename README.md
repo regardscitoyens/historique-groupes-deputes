@@ -37,8 +37,12 @@
 
 - [ ] create missing _groupe_acronyme fields in ND mysql on Amendement/Intervention/ParlementaireTexteLoi/QuestionEcrite
 
+- [ ] fix missing deputes listed as senateurs
+
 - [ ] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
 - [ ] check objects with info not filled
 
 - [ ] generate sql commands to set last groupe to all MPs ?
+
+- [ ] use fields in API
