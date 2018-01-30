@@ -28,7 +28,8 @@ def parse_ancien_mandat(mandat):
     m = mandat.split(" / ")
     return {
       "debut": parse_date(m[0]),
-      "fin": parse_date(m[1])
+      "fin": parse_date(m[1]),
+      "motif": m[2]
     }
 
 
@@ -54,7 +55,7 @@ with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
              "fin": dep["mandat_fin"]
             }]
         deputes["OMC_PA%s" % dep["id_an"]] = dep
-        slugs[dep["slug"]] = dep
+        slugs[dep["slug"].replace("georges-ginesta", "jordi-ginesta")] = dep
 
 with open(os.path.join("data", "senateurs.json")) as jsonf:
     for senateur in json.load(jsonf)["senateurs"]:
@@ -150,6 +151,12 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     groupe["fin"] = max(curdat, max([a["fin"] for a in depute["anciens_mandats"] if not curdat > a["fin"]]))
     depute["groupes_historique"].append(groupe)
     results.append(depute)
+
+    # Complete missing
+    for depute in [d for d in deputes.values() if "groupes_historique" not in d]:
+        print "WARNING missing data for", depute["nom"], depute["anciens_mandats"], depute["groupe_sigle"], "OMC_PA"+depute["id_an"]
+
+    # Write data
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
         print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
 
