@@ -152,9 +152,13 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
         if d["groupes_historique"][-1]["fin"] != d["anciens_mandats"][-1]["fin"]:
             print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], d["anciens_mandats"][-1]["fin"]
 
+        dat = ""
         for h in d["groupes_historique"]:
             if h["debut"] > h["fin"]:
                 print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
+            if not h["debut"] > dat:
+                print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
+            dat = h["fin"]
 
 
 

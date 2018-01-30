@@ -31,7 +31,7 @@
 
 - [X] check debuts/fin mandat
 
-- [ ] check doubles appartenances à une meme date
+- [X] check doubles appartenances à une meme date
 
 - [ ] check missing periodes
 
