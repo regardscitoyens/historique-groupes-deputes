@@ -33,7 +33,7 @@
 
 - [X] check doubles appartenances à une meme date
 
-- [ ] check missing periodes
+- [X] check missing/extra periodes
 
 - [ ] create missing _groupe_acronyme fields in ND mysql on Amendement/Intervention/ParlementaireTexteLoi/QuestionEcrite
 

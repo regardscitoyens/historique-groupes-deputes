@@ -90,7 +90,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
             continue
         if dep != curdep:
             if depute:
-                groupe["fin"] = max(curdat, depute["mandat_fin"])
+                groupe["fin"] = max(curdat, max([a["fin"] for a in depute["anciens_mandats"] if not curdat < a["debut"] and not curdat > a["fin"]]))
                 depute["groupes_historique"].append(groupe)
                 results.append(depute)
             try:
@@ -131,7 +131,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
         if dat != curdat:
             olddat = curdat
             curdat = dat
-    groupe["fin"] = max(curdat, depute["mandat_fin"])
+    groupe["fin"] = max(curdat, max([a["fin"] for a in depute["anciens_mandats"] if not curdat > a["fin"]]))
     depute["groupes_historique"].append(groupe)
     results.append(depute)
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as f:
@@ -139,33 +139,36 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
 
     # TEST results
     for d in results:
-        if not d["anciens_mandats"]:
+        am = d["anciens_mandats"]
+
+        if not am:
             print "WARNING, no mandats for", d["nom"]
-        if d["anciens_mandats"][-1]["debut"] != d["mandat_debut"]:
-            print "WARNING, first date last mandat for", d["nom"], d["anciens_mandats"][-1]["debut"], d["mandat_debut"]
-        if d["anciens_mandats"][-1]["fin"] != d["mandat_fin"]:
-            print "WARNING, last date last mandat for", d["nom"], d["anciens_mandats"][-1]["fin"], d["mandat_fin"]
+        if am[-1]["debut"] != d["mandat_debut"]:
+            print "WARNING, first date last mandat for", d["nom"], am[-1]["debut"], d["mandat_debut"]
+        if am[-1]["fin"] != d["mandat_fin"]:
+            print "WARNING, last date last mandat for", d["nom"], am[-1]["fin"], d["mandat_fin"]
         if not d["groupes_historique"]:
             print "WARNING, no historique for", d["nom"]
-        if d["groupes_historique"][0]["debut"] != d["anciens_mandats"][0]["debut"]:
-            print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], d["anciens_mandats"][0]["debut"]
-        if d["groupes_historique"][-1]["fin"] != d["anciens_mandats"][-1]["fin"]:
-            print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], d["anciens_mandats"][-1]["fin"]
+        if d["groupes_historique"][0]["debut"] != am[0]["debut"]:
+            print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], am[0]["debut"]
+        if d["groupes_historique"][-1]["fin"] != am[-1]["fin"]:
+            print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], am[-1]["fin"]
 
         a = 0
         dat = ""
-        am = d["anciens_mandats"]
         for h in d["groupes_historique"]:
+            if h["debut"] < am[a]["debut"]:
+                print "WARNING, groupe before mandat for", d["nom"], h, am[a]
+            if h["fin"] > am[a]["fin"]:
+                print "WARNING, groupe after mandat for", d["nom"], h, am[a]
+            elif h["fin"] == am[a]["fin"]:
+                a += 1
+
             if h["debut"] > h["fin"]:
                 print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
             if not h["debut"] > dat:
                 print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
             dat = h["fin"]
-
-            if dat > am[a]["fin"]:
-                print "WARNING, groupe after mandat for", d["nom"], h, am[a]
-            elif dat == am[a]["fin"]:
-                a += 1
-
-
+        if a != len(am):
+            print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
 
