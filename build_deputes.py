@@ -9,7 +9,7 @@ leg = int(sys.argv[1])
 assert leg in [13,14]
 
 leg_start = "%d-06-20" % (int(leg)*5 + 1942)
-leg_end = ("%d-06-19" % (int(leg)*5 + 1947)).decode("utf-8")
+leg_end = ("%d-06-%s" % (int(leg)*5 + 1947, 19 if leg == 13 else 20)).decode("utf-8")
 
 def parse_date(dat):
     if not dat:
@@ -90,7 +90,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
             continue
         if dep != curdep:
             if depute:
-                groupe["fin"] = curdat
+                groupe["fin"] = depute["mandat_fin"]
                 depute["groupes_historique"].append(groupe)
                 results.append(depute)
             try:
@@ -130,8 +130,24 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as f:
         if dat != curdat:
             olddat = curdat
             curdat = dat
-    groupe["fin"] = curdat
+    groupe["fin"] = depute["mandat_fin"]
     depute["groupes_historique"].append(groupe)
     results.append(depute)
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as f:
         json.dump(results, f, indent=2)
+
+    # TEST results
+    for d in results:
+        if not d["anciens_mandats"]:
+            print "WARNING, no mandats for", d["nom"]
+        if d["anciens_mandats"][-1]["debut"] != d["mandat_debut"]:
+            print "WARNING, first date last mandat for", d["nom"], d["anciens_mandats"][-1]["debut"], d["mandat_debut"]
+        if d["anciens_mandats"][-1]["fin"] != d["mandat_fin"]:
+            print "WARNING, last date last mandat for", d["nom"], d["anciens_mandats"][-1]["fin"], d["mandat_fin"]
+        if not d["groupes_historique"]:
+            print "WARNING, no historique for", d["nom"]
+        if d["groupes_historique"][0]["debut"] != d["anciens_mandats"][0]["debut"]:
+            print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], d["anciens_mandats"][0]["debut"]
+        if d["groupes_historique"][-1]["fin"] != d["mandat_fin"]:
+            print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], d["mandat_fin"]
+

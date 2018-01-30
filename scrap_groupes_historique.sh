@@ -85,4 +85,3 @@ for leg in 13 14; do
   ./build_deputes.py $leg
 done
 
-

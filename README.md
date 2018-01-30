@@ -29,7 +29,7 @@
 }, ...]
 ```
 
-- [ ] check debuts/fin mandat
+- [X] check debuts/fin mandat
 
 - [ ] check doubles appartenances à une meme date
 
