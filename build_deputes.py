@@ -160,7 +160,7 @@ def read_opendata_an(data, leg, deputes):
             "fin": o["viMoDe"]["dateFin"]
         }
 
-    parls = {}
+    results = []
     for parl in data["acteurs"]["acteur"]:
         pid = parl["uid"]["#text"]
         nom = parl["etatCivil"]["ident"]
@@ -180,12 +180,12 @@ def read_opendata_an(data, leg, deputes):
           } for m in parl["mandats"]["mandat"]
           if m["typeOrgane"] == "GP" and m["legislature"] == leg
         ]
-        parls[pid] = {
-            "nom": "%s %s" % (nom["prenom"], nom["nom"]),
-            "mandats": sorted(mandats, key=lambda x: x["debut"]),
-            "groupes": sorted(groupes, key=lambda x: x["debut"])
-        }
-    return parls
+        depute = deputes[pid]
+        depute["anciens_mandats"] = sorted(mandats, key=lambda x: x["debut"])
+        depute["groupes_historique"] = sorted(groupes, key=lambda x: x["debut"])
+        results.append(depute)
+
+    return results
 
 def test_depute(d):
     am = d["anciens_mandats"]
@@ -282,6 +282,6 @@ if __name__ == "__main__":
     test_results(results, slugs)
 
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
-        print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
+        print >> jsonf, json.dumps(sorted(results, key=lambda x: x["nom_de_famille"] + x["prenom"]), indent=2, ensure_ascii=False).encode("utf-8")
 
     write_sql(results, leg)
