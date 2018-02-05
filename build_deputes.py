@@ -5,17 +5,9 @@ import os, sys, csv, json
 from pprint import pprint
 from datetime import date, datetime, timedelta
 
-
-leg = int(sys.argv[1])
-assert leg in [13,14]
-
-leg_start = "%d-06-20" % (leg * 5 + 1942)
-leg_end = ("%d-06-%s" % (leg * 5 + 1947, leg + 6)).decode("utf-8")
-
-
 def parse_date(dat):
     if not dat:
-        return leg_end
+        return None
     d = dat.split("/")
     return "-".join([d[2], d[1], d[0]])
 
@@ -24,30 +16,31 @@ def substract_day(dat, days=1):
     d = dat - timedelta(days=days)
     return d.isoformat()
 
-def parse_ancien_mandat(mandat):
+def parse_ancien_mandat(mandat, leg_end):
     m = mandat.split(" / ")
     return {
-      "debut": parse_date(m[0]),
-      "fin": parse_date(m[1]),
+      "debut": parse_date(m[0]) or leg_end,
+      "fin": parse_date(m[1]) or leg_end,
       "motif": m[2]
     }
 
-
-# READ PARLS
-deputes = {}
-slugs = {}
-with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
-    for depute in json.load(jsonf)["deputes"]:
+def load_deputes(data, leg):
+    leg_start = "%d-06-20" % (leg * 5 + 1942)
+    leg_end = ("%d-06-%s" % (leg * 5 + 1947, leg + 6)).decode("utf-8")
+    deputes = {}
+    slugs = {}
+    for depute in data:
         dep = depute["depute"]
         if not dep["mandat_fin"]:
             dep["mandat_fin"] = leg_end
         anciens = [
-          parse_ancien_mandat(a["mandat"])
+          parse_ancien_mandat(a["mandat"], leg_end)
           for a in dep["anciens_mandats"]
         ]
         dep["anciens_mandats"] = sorted([
           a for a in anciens
           if a["debut"] >= leg_start
+          and a["fin"] <= leg_end
         ], key=lambda x: x["debut"])
         if not len(dep["anciens_mandats"]):
             dep["anciens_mandats"] = [{
@@ -56,41 +49,39 @@ with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
             }]
         deputes["OMC_PA%s" % dep["id_an"]] = dep
         slugs[dep["slug"].replace("georges-ginesta", "jordi-ginesta")] = dep
+    return deputes, slugs
 
-with open(os.path.join("data", "senateurs.json")) as jsonf:
-    for senateur in json.load(jsonf)["senateurs"]:
+def complete_deputes_senateurs(data, deputes, slugs):
+    for senateur in data:
         sen = senateur["senateur"]
         senid = sen["url_institution"].replace("http://www.senat.fr/", "")
         if sen["slug"] in slugs:
             deputes[senid] = slugs[sen["slug"]]
 
+def parse_listes_quotidiennes(data, deputes):
+    siglize = {
+      "Gauche démocrate et républicaine": "GDR",
+      "écologiste": "ECOLO",
+      "Socialiste, radical, citoyen et divers gauche": "SRC",
+      "socialiste, républicain et citoyen": "SRC",
+      "Socialiste, écologiste et républicain": "SER",
+      "radical, républicain, démocrate et progressiste": "RRDP",
+      "Nouveau Centre": "NC",
+      "Union des démocrates et indépendants": "UDI",
+      "Union pour un Mouvement Populaire": "UMP",
+      "Rassemblement - Union pour un Mouvement Populaire": "RUMP",
+      "Les Républicains": "LR",
+      "Députés n'appartenant à aucun groupe": "NI",
+      "députés non inscrits": "NI"
+    }
 
-siglize = {
-  "Gauche démocrate et républicaine": "GDR",
-  "écologiste": "ECOLO",
-  "Socialiste, radical, citoyen et divers gauche": "SRC",
-  "socialiste, républicain et citoyen": "SRC",
-  "Socialiste, écologiste et républicain": "SER",
-  "radical, républicain, démocrate et progressiste": "RRDP",
-  "Nouveau Centre": "NC",
-  "Union des démocrates et indépendants": "UDI",
-  "Union pour un Mouvement Populaire": "UMP",
-  "Rassemblement - Union pour un Mouvement Populaire": "RUMP",
-  "Les Républicains": "LR",
-  "Députés n'appartenant à aucun groupe": "NI",
-  "députés non inscrits": "NI"
-}
+    max_date = {
+      "écologiste": "2016-05-19",
+      "socialiste, républicain et citoyen": "2016-05-24",
+      "Rassemblement - Union pour un Mouvement Populaire": "2013-01-15",
+      "Union pour un Mouvement Populaire": "2015-06-01"
+    }
 
-max_date = {
-  "écologiste": "2016-05-19",
-  "socialiste, républicain et citoyen": "2016-05-24",
-  "Rassemblement - Union pour un Mouvement Populaire": "2013-01-15",
-  "Union pour un Mouvement Populaire": "2015-06-01"
-}
-
-
-# BUILD DATA
-with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     curdat = None
     curgpe = None
     curdep = None
@@ -99,7 +90,7 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     oldgpe = None
     olddat = None
     results = []
-    for r in csv.reader(csvf, delimiter=";"):
+    for r in data:
         dep = r[0]
         dat = r[1]
         gpe = siglize[r[2]]
@@ -152,17 +143,11 @@ with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
     depute["groupes_historique"].append(groupe)
     results.append(depute)
 
-    # Complete missing
-    for depute in [d for d in slugs.values() if "groupes_historique" not in d]:
-        print "WARNING missing data for", depute["nom"], depute["anciens_mandats"], depute["groupe_sigle"], "OMC_PA"+depute["id_an"]
-
-    # Write data
-    with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
-        print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
+    return results
 
 
-# CHECK RESULTS
-for d in results:
+
+def test_depute(d):
     am = d["anciens_mandats"]
 
     if not am:
@@ -197,32 +182,59 @@ for d in results:
     if a != len(am):
         print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
 
+def test_results(results, slugs):
+    # Check missing
+    for depute in [d for d in slugs.values() if "groupes_historique" not in d]:
+        print "WARNING missing data for", depute["nom"], depute["anciens_mandats"], depute["groupe_sigle"], "OMC_PA"+depute["id_an"]
 
-# WRITE SQL
-sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
-join = " LEFT JOIN %s o ON o.id = %s_id"
-for table in [
-  "amendement",
-  "parlementaire_amendement",
-  "parlementaire_texteloi",
-  "presence",
-  "intervention",
-  "question_ecrite",
-]:
-    ref_field = "parlementaire"
-    lj = ""
-    extra = None
-    if table.startswith("parlementaire_"):
-        tbl = table.replace("parlementaire_", "")
-        lj = join % (tbl, tbl)
-    elif table == "amendement":
-        ref_field = "auteur"
-        if leg == 13:
-            lj = " LEFT JOIN parlementaire_amendement o ON o.amendement_id = id"
-            extra = "o.numero_signataire = 1 AND o.parlementaire"
+    for d in results:
+        test_depute(d)
 
-    with open(os.path.join("sql", "update-%s-leg%s.sql" % (table, leg)), "w") as sqlf:
-        for d in results:
-            for h in d["groupes_historique"]:
-                print >> sqlf, sql % (table, lj, ref_field, h["sigle"], extra or ref_field, d["id"], h["debut"], h["fin"])
+def write_sql(results, leg):
+    sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
+    join = " LEFT JOIN %s o ON o.id = %s_id"
+    for table in [
+      "amendement",
+      "parlementaire_amendement",
+      "parlementaire_texteloi",
+      "presence",
+      "intervention",
+      "question_ecrite",
+    ]:
+        ref_field = "parlementaire"
+        lj = ""
+        extra = None
+        if table.startswith("parlementaire_"):
+            tbl = table.replace("parlementaire_", "")
+            lj = join % (tbl, tbl)
+        elif table == "amendement":
+            ref_field = "auteur"
+            if leg == 13:
+                lj = " LEFT JOIN parlementaire_amendement o ON o.amendement_id = id"
+                extra = "o.numero_signataire = 1 AND o.parlementaire"
 
+        with open(os.path.join("sql", "update-%s-leg%s.sql" % (table, leg)), "w") as sqlf:
+            for d in results:
+                for h in d["groupes_historique"]:
+                    print >> sqlf, sql % (table, lj, ref_field, h["sigle"], extra or ref_field, d["id"], h["debut"], h["fin"])
+
+
+if __name__ == "__main__":
+    legstr = sys.argv[1]
+    leg = int(legstr)
+    assert leg in [13,14]
+
+    with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
+        deputes, slugs = load_deputes(json.load(jsonf)["deputes"], leg)
+
+    with open(os.path.join("data", "senateurs.json")) as jsonf:
+        complete_deputes_senateurs(json.load(jsonf)["senateurs"], deputes, slugs)
+    with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
+        results = parse_listes_quotidiennes(csv.reader(csvf, delimiter=";"), deputes)
+
+    test_results(results, slugs)
+
+    with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
+        print >> jsonf, json.dumps(results, indent=2, ensure_ascii=False).encode("utf-8")
+
+    write_sql(results, leg)
