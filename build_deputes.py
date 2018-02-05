@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os, sys, csv, json
+import os, sys, csv, json, re
 from pprint import pprint
 from datetime import date, datetime, timedelta
 
@@ -145,7 +145,47 @@ def parse_listes_quotidiennes(data, deputes):
 
     return results
 
+def read_opendata_an(data, leg, deputes):
+    re_clean_libelle = re.compile(r"\W")
+    clean_libelle = lambda x: re_clean_libelle.sub("", x).replace("LESREP", "LR")
 
+    organes = {}
+    for o in data["organes"]["organe"]:
+        if o["codeType"] != "GP" or o["legislature"] != leg:
+            continue
+        organes[o["uid"]] = {
+            "nom": o["libelle"],
+            "sigle": clean_libelle(o["libelleAbrev"]),
+            "debut": o["viMoDe"]["dateDebut"],
+            "fin": o["viMoDe"]["dateFin"]
+        }
+
+    parls = {}
+    for parl in data["acteurs"]["acteur"]:
+        pid = parl["uid"]["#text"]
+        nom = parl["etatCivil"]["ident"]
+        mandats = [{
+            "debut": m["dateDebut"],
+            "fin": m["dateFin"],
+            "motif": m["mandature"]["causeFin"] or m["election"]["causeMandat"]
+          } for m in parl["mandats"]["mandat"]
+          if m["@xsi:type"] == "MandatParlementaire_type" and m["legislature"] == leg
+        ]
+        if not mandats:
+            continue
+        groupes = [{
+            "organe": organes[m["organes"]["organeRef"]],
+            "debut": m["dateDebut"],
+            "fin": m["dateFin"]
+          } for m in parl["mandats"]["mandat"]
+          if m["typeOrgane"] == "GP" and m["legislature"] == leg
+        ]
+        parls[pid] = {
+            "nom": "%s %s" % (nom["prenom"], nom["nom"]),
+            "mandats": sorted(mandats, key=lambda x: x["debut"]),
+            "groupes": sorted(groupes, key=lambda x: x["debut"])
+        }
+    return parls
 
 def test_depute(d):
     am = d["anciens_mandats"]
@@ -227,10 +267,17 @@ if __name__ == "__main__":
     with open(os.path.join("data", "deputes-leg%s.json" % leg)) as jsonf:
         deputes, slugs = load_deputes(json.load(jsonf)["deputes"], leg)
 
-    with open(os.path.join("data", "senateurs.json")) as jsonf:
-        complete_deputes_senateurs(json.load(jsonf)["senateurs"], deputes, slugs)
-    with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
-        results = parse_listes_quotidiennes(csv.reader(csvf, delimiter=";"), deputes)
+    # Use OpenData AN
+    if len(sys.argv) == 2:
+        with open(os.path.join("data", "opendata_an.json")) as jsonf:
+            results = read_opendata_an(json.load(jsonf)["export"], legstr, deputes)
+
+    # Use scraped data
+    else:
+        with open(os.path.join("data", "senateurs.json")) as jsonf:
+            complete_deputes_senateurs(json.load(jsonf)["senateurs"], deputes, slugs)
+        with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
+            results = parse_listes_quotidiennes(csv.reader(csvf, delimiter=";"), deputes)
 
     test_results(results, slugs)
 
