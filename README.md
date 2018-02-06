@@ -46,7 +46,13 @@
 - [X] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
 - [ ] check objects with info not filled
+  + [X] 2007-2012
+  + [ ] 2012-2017
+
+- [ ] run sql in prod
+
+- [ ] use fields in API
 
 - [ ] generate sql commands to set last groupe to all MPs ?
 
-- [ ] use fields in API
+- [ ] build data repartition_deputes by day

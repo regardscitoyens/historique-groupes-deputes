@@ -78,11 +78,11 @@ function scrap_legi {
 
 download https://www.nossenateurs.fr/senateurs/json > data/senateurs.json
 for leg in 13 14; do
-  if ! test -s data/historique-groupes-leg$leg.csv; then
+  if ! [ -z "$1" ] && ! test -s data/historique-groupes-leg$leg.csv; then
     scrap_legi $leg
   fi
   yr=$((1942 + $leg*5))
   download https://$yr.nosdeputes.fr/deputes/json > data/deputes-leg$leg.json
-  ./build_deputes.py $leg
+  ./build_deputes.py $leg $1
 done
 
