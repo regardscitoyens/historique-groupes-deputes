@@ -283,7 +283,7 @@ def test_results(results, slugs, leg):
 
 def write_sql(results, leg):
     sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
-    join = " LEFT JOIN %s o ON o.id = %s_id"
+    join = " INNER JOIN %s o ON o.id = %s_id"
     for table in [
       "amendement",
       "parlementaire_amendement",
