@@ -301,7 +301,7 @@ def write_sql(results, leg):
         elif table == "amendement":
             ref_field = "auteur"
             if leg == 13:
-                lj = " LEFT JOIN parlementaire_amendement o ON o.amendement_id = id"
+                lj = " LEFT JOIN parlementaire_amendement o ON o.amendement_id = amendement.id"
                 extra = "o.numero_signataire = 1 AND o.parlementaire"
 
         with open(os.path.join("sql", "update-%s-leg%s.sql" % (table, leg)), "w") as sqlf:

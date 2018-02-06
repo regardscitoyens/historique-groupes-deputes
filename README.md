@@ -37,11 +37,13 @@
 
 - [X] fix missing deputes listed as senateurs
 
+- [X] fix still missing deputes (ex P. Roy)
+
+- [X] use AN OpenData instead of all of this mess...
+
 - [X] create missing _groupe_acronyme fields in ND mysql on Amendement/ParlAmendement/Intervention/ParlementaireTexteLoi/Presence/QuestionEcrite
 
 - [X] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
-
-- [ ] fix still missing deputes (ex P. Roy)
 
 - [ ] check objects with info not filled
 
