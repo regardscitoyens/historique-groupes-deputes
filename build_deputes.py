@@ -16,6 +16,13 @@ def substract_day(dat, days=1):
     d = dat - timedelta(days=days)
     return d.isoformat()
 
+def close_dates(d1, d2, delay=4):
+    if not d1 or not d2:
+        return False
+    dt1 = datetime.strptime(d1, "%Y-%m-%d").date()
+    dt2 = datetime.strptime(d2, "%Y-%m-%d").date()
+    return abs((dt1 - dt2).days) <= delay
+
 def parse_ancien_mandat(mandat, leg_end):
     m = mandat.split(" / ")
     return {
@@ -146,8 +153,11 @@ def parse_listes_quotidiennes(data, deputes):
     return results
 
 def read_opendata_an(data, leg, deputes):
+    lg = int(leg)
+    leg_end = ("%d-06-%s" % (lg * 5 + 1947, lg + 6)).decode("utf-8")
     re_clean_libelle = re.compile(r"\W")
     clean_libelle = lambda x: re_clean_libelle.sub("", x).replace("LESREP", "LR")
+    sort_periods = lambda x: "%s-%s" % (x["debut"], x["fin"])
 
     organes = {}
     for o in data["organes"]["organe"]:
@@ -162,50 +172,91 @@ def read_opendata_an(data, leg, deputes):
 
     results = []
     for parl in data["acteurs"]["acteur"]:
-        pid = parl["uid"]["#text"]
+        pid = "OMC_%s" % parl["uid"]["#text"]
         nom = parl["etatCivil"]["ident"]
         mandats = [{
-            "debut": m["dateDebut"],
+            "debut": m["mandature"]["datePriseFonction"],
             "fin": m["dateFin"],
             "motif": m["mandature"]["causeFin"] or m["election"]["causeMandat"]
           } for m in parl["mandats"]["mandat"]
-          if m["@xsi:type"] == "MandatParlementaire_type" and m["legislature"] == leg
+          if m["@xsi:type"] == "MandatParlementaire_type"
+          and m["legislature"] == leg
+          and m["mandature"]["datePriseFonction"]
         ]
         if not mandats:
             continue
+        mandats = sorted(mandats, key=sort_periods)
         groupes = [{
-            "organe": organes[m["organes"]["organeRef"]],
+            "sigle": organes[m["organes"]["organeRef"]]["sigle"],
             "debut": m["dateDebut"],
             "fin": m["dateFin"]
           } for m in parl["mandats"]["mandat"]
-          if m["typeOrgane"] == "GP" and m["legislature"] == leg
+          if m["typeOrgane"] == "GP"
+          and m["legislature"] == leg
+          and m["preseance"] != "1"
         ]
-        depute = deputes[pid]
-        depute["anciens_mandats"] = sorted(mandats, key=lambda x: x["debut"])
-        depute["groupes_historique"] = sorted(groupes, key=lambda x: x["debut"])
+        groupes = sorted(groupes, key=sort_periods)
+        if not groupes:
+            print "WARNING, skipping député with no gpe", nom, groupes, mandats
+            continue
+        # fix bad data AN
+        if pid == "OMC_PA1205":
+            groupes[0]["fin"] = "2007-06-26"
+        if groupes[0]["debut"] > mandats[0]["debut"] and groupes[0]["sigle"] != "NI":
+            groupes.insert(0, {
+              "sigle": "NI",
+              "debut": mandats[0]["debut"],
+              "fin": substract_day(groupes[0]["debut"])
+            })
+        elif close_dates(groupes[0]["debut"], mandats[0]["debut"], 31):
+            groupes[0]["debut"] = mandats[0]["debut"]
+        if close_dates(groupes[-1]["fin"], mandats[-1]["fin"], 31):
+            groupes[-1]["fin"] = mandats[-1]["fin"]
+        gpes = []
+        for i, g in enumerate(groupes):
+            if i != len(groupes) - 1 and g["fin"] == groupes[i+1]["debut"]:
+                prev = substract_day(g["fin"])
+                if prev < g["debut"]:
+                    continue
+                g["fin"] = prev
+            if i != len(groupes) - 1 and g["fin"] == substract_day(groupes[i+1]["debut"]) and g["sigle"] == groupes[i+1]["sigle"]:
+                groupes[i+1]["debut"] = g["debut"]
+                continue
+            gpes.append(g)
+        try:
+            depute = deputes[pid]
+            depute["groupes_historique"] = gpes
+            #depute["anciens_mandats"] = mandats
+        except KeyError:
+            if not close_dates(mandats[0]["debut"], leg_end):
+                print "WARNING depute missing in ND:", pid, nom["prenom"], nom["nom"], mandats
+            continue
         results.append(depute)
 
     return results
 
-def test_depute(d):
+def test_depute(d, leg):
     am = d["anciens_mandats"]
+    leg_end = ("%d-06-%s" % (leg * 5 + 1947, leg + 6)).decode("utf-8")
 
     if not am:
         print "WARNING, no mandats for", d["nom"]
-    if am[-1]["debut"] != d["mandat_debut"]:
+    if am[-1]["debut"] != d["mandat_debut"] and not close_dates(am[-1]["debut"], leg_end):
         print "WARNING, first date last mandat for", d["nom"], am[-1]["debut"], d["mandat_debut"]
-    if am[-1]["fin"] != d["mandat_fin"]:
+    if am[-1]["fin"] != d["mandat_fin"] and not close_dates(am[-1]["fin"], leg_end):
         print "WARNING, last date last mandat for", d["nom"], am[-1]["fin"], d["mandat_fin"]
     if not d["groupes_historique"]:
         print "WARNING, no historique for", d["nom"]
     if d["groupes_historique"][0]["debut"] != am[0]["debut"]:
         print "WARNING, first date for", d["nom"], d["groupes_historique"][0]["debut"], am[0]["debut"]
-    if d["groupes_historique"][-1]["fin"] != am[-1]["fin"]:
+    if d["groupes_historique"][-1]["fin"] != am[-1]["fin"] and not close_dates(d["groupes_historique"][-1]["fin"], leg_end):
         print "WARNING, last date for", d["nom"], d["groupes_historique"][-1]["fin"], am[-1]["fin"]
 
     a = 0
     dat = ""
     for h in d["groupes_historique"]:
+        if close_dates(h["debut"], leg_end):
+            continue
         if h["debut"] < am[a]["debut"]:
             print "WARNING, groupe before mandat for", d["nom"], h, am[a]
         if h["fin"] > am[a]["fin"]:
@@ -216,19 +267,19 @@ def test_depute(d):
         if h["debut"] > h["fin"]:
             print "WARNING, negative dates for", d["nom"], d["groupes_historique"]
         if not h["debut"] > dat:
-            print "WARNING, duplicate period for", d["nom"], dat, h["debut"]
+            print "WARNING, duplicate period for", d["nom"], dat, h["debut"], am, d["groupes_historique"]
         dat = h["fin"]
 
-    if a != len(am):
+    if a != len(am) and not (close_dates(dat, leg_end) or close_dates(am[-1]["fin"], leg_end)) and am[-1]["debut"] != am[-1]["fin"]:
         print "WARNING, last mandate not covered for", d["nom"], dat, am[a:]
 
-def test_results(results, slugs):
+def test_results(results, slugs, leg):
     # Check missing
     for depute in [d for d in slugs.values() if "groupes_historique" not in d]:
         print "WARNING missing data for", depute["nom"], depute["anciens_mandats"], depute["groupe_sigle"], "OMC_PA"+depute["id_an"]
 
     for d in results:
-        test_depute(d)
+        test_depute(d, leg)
 
 def write_sql(results, leg):
     sql = "UPDATE %s%s SET %s_groupe_acronyme = '%s' WHERE %s_id = %s AND date >= '%s' AND date <= '%s';"
@@ -279,7 +330,7 @@ if __name__ == "__main__":
         with open(os.path.join("data", "historique-groupes-leg%s.csv" % leg)) as csvf:
             results = parse_listes_quotidiennes(csv.reader(csvf, delimiter=";"), deputes)
 
-    test_results(results, slugs)
+    test_results(results, slugs, leg)
 
     with open(os.path.join("data", "deputes-historique-leg%s.json" % leg), "w") as jsonf:
         print >> jsonf, json.dumps(sorted(results, key=lambda x: x["nom_de_famille"] + x["prenom"]), indent=2, ensure_ascii=False).encode("utf-8")

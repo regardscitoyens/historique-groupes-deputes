@@ -310,6 +310,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2007-07-19"
       }, 
       {
@@ -400,6 +405,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "NC", 
         "fin": "2007-06-28"
       }, 
       {
@@ -646,7 +656,7 @@
       {
         "debut": "2009-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Edwige Antier", 
@@ -699,6 +709,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2009-07-23"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Benoist Apparu", 
@@ -890,7 +905,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-15"
       }
     ], 
     "nom": "Jean-Marc Ayrault", 
@@ -909,6 +924,51 @@
     "num_deptmt": "44", 
     "nom_de_famille": "Ayrault", 
     "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2007-07-19", 
+    "profession": "Docteure en pharmacie", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/roselyne-bachelot-narquin/json", 
+    "nb_mandats": 1, 
+    "id": 330, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Nevers (Nièvre)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "nomination comme membre du gouvernement", 
+        "debut": "2007-06-20", 
+        "fin": "2007-07-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-07-19"
+      }
+    ], 
+    "nom": "Roselyne Bachelot-Narquin", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Maine-et-Loire", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/roselyne-bachelot-narquin", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/332.asp", 
+    "date_naissance": "1946-12-24", 
+    "slug": "roselyne-bachelot-narquin", 
+    "id_an": "332", 
+    "prenom": "Roselyne", 
+    "num_deptmt": "49", 
+    "nom_de_famille": "Bachelot-Narquin", 
+    "num_circo": 1
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -1267,6 +1327,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2010-04-23"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "François Baroin", 
@@ -1552,7 +1617,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Delphine Batho", 
@@ -1644,11 +1709,6 @@
     "groupes_historique": [
       {
         "debut": "2007-06-20", 
-        "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
         "sigle": "NI", 
         "fin": "2012-06-19"
       }
@@ -1828,11 +1888,6 @@
     "groupes_historique": [
       {
         "debut": "2007-06-20", 
-        "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
         "sigle": "NI", 
         "fin": "2008-07-06"
       }, 
@@ -2132,11 +2187,6 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
-        "sigle": "NI", 
         "fin": "2012-06-19"
       }
     ], 
@@ -2209,6 +2259,56 @@
     "num_deptmt": "76", 
     "nom_de_famille": "Besselat", 
     "num_circo": 7
+  }, 
+  {
+    "mandat_fin": "2010-12-29", 
+    "profession": "Vétérinaire", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/gabriel-biancheri/json", 
+    "nb_mandats": 3, 
+    "id": 606, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Oullins (Rhône)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2010-12-29"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-07-03"
+      }, 
+      {
+        "debut": "2007-07-05", 
+        "sigle": "UMP", 
+        "fin": "2010-12-29"
+      }
+    ], 
+    "nom": "Gabriel Biancheri", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Drôme", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "14", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/gabriel-biancheri", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267140.asp", 
+    "date_naissance": "1943-10-01", 
+    "slug": "gabriel-biancheri", 
+    "id_an": "267140", 
+    "prenom": "Gabriel", 
+    "num_deptmt": "26", 
+    "nom_de_famille": "Biancheri", 
+    "num_circo": 4
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -2529,7 +2629,17 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "NC", 
         "fin": "2008-04-19"
+      }, 
+      {
+        "debut": "2010-08-05", 
+        "sigle": "NI", 
+        "fin": "2010-09-01"
       }, 
       {
         "debut": "2010-09-02", 
@@ -3152,7 +3262,7 @@
       {
         "debut": "2011-07-30", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Joseph Bossé", 
@@ -3483,7 +3593,7 @@
       {
         "debut": "2009-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Bruno Bourg-Broc", 
@@ -3653,6 +3763,56 @@
     "num_deptmt": "22", 
     "nom_de_famille": "Bousquet", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2009-07-24", 
+    "profession": "Journaliste", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/christine-boutin/json", 
+    "nb_mandats": 1, 
+    "id": 119, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Levroux (Indre)", 
+    "mandat_debut": "2009-07-24", 
+    "anciens_mandats": [
+      {
+        "motif": "nomination comme membre du gouvernement", 
+        "debut": "2007-06-20", 
+        "fin": "2007-07-19"
+      }, 
+      {
+        "motif": "démission", 
+        "debut": "2009-07-24", 
+        "fin": "2009-07-24"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-07-19"
+      }
+    ], 
+    "nom": "Christine Boutin", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/christine-boutin", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/632.asp", 
+    "date_naissance": "1944-02-06", 
+    "slug": "christine-boutin", 
+    "id_an": "632", 
+    "prenom": "Christine", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Boutin", 
+    "num_circo": 10
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -4156,7 +4316,7 @@
       {
         "debut": "2010-12-15", 
         "sigle": "NC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Pascal Brindeau", 
@@ -4518,6 +4678,51 @@
     "num_circo": 4
   }, 
   {
+    "mandat_fin": "2009-04-14", 
+    "profession": "Chef d'entreprise", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/pierre-bedier/json", 
+    "nb_mandats": 1, 
+    "id": 608, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Mont-de-Marsan (Landes)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "prolongation de mission temporaire", 
+        "debut": "2007-06-20", 
+        "fin": "2009-04-14"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2009-04-14"
+      }
+    ], 
+    "nom": "Pierre Bédier", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/pierre-bedier", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/430.asp", 
+    "date_naissance": "1957-09-30", 
+    "slug": "pierre-bedier", 
+    "id_an": "430", 
+    "prenom": "Pierre", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Bédier", 
+    "num_circo": 8
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Cadre d'entreprise", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jacques-alain-benisti/json", 
@@ -4640,7 +4845,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Jérôme Cahuzac", 
@@ -5298,7 +5503,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Bernard Cazeneuve", 
@@ -5587,6 +5792,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2010-01-10"
       }, 
       {
@@ -5615,6 +5825,55 @@
     "num_deptmt": "49", 
     "nom_de_famille": "Charette", 
     "num_circo": 6
+  }, 
+  {
+    "mandat_fin": "2009-11-03", 
+    "profession": "Directeur multimédia de société de presse", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-paul-charie/json", 
+    "nb_mandats": 1, 
+    "id": 84, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Egry (Loiret)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2009-11-03"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2009-11-03"
+      }
+    ], 
+    "nom": "Jean-Paul Charié", 
+    "sites_web": [
+      {
+        "site": "http://www.jeanpaulcharie.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Loiret", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "248", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-paul-charie", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/817.asp", 
+    "date_naissance": "1952-04-25", 
+    "slug": "jean-paul-charie", 
+    "id_an": "817", 
+    "prenom": "Jean-Paul", 
+    "num_deptmt": "45", 
+    "nom_de_famille": "Charié", 
+    "num_circo": 5
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -5803,6 +6062,55 @@
     "num_deptmt": "88", 
     "nom_de_famille": "Cherpion", 
     "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2011-05-05", 
+    "profession": "Préparateur en pharmacie", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-francois-chossy/json", 
+    "nb_mandats": 2, 
+    "id": 128, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Montbrison (Loire)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "prolongation de mission temporaire", 
+        "debut": "2007-06-20", 
+        "fin": "2011-05-05"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-05-05"
+      }
+    ], 
+    "nom": "Jean-François Chossy", 
+    "sites_web": [
+      {
+        "site": "http://www.jeanfrancoischossy.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Loire", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "7", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-francois-chossy", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/866.asp", 
+    "date_naissance": "1947-05-04", 
+    "slug": "jean-francois-chossy", 
+    "id_an": "866", 
+    "prenom": "Jean-François", 
+    "num_deptmt": "42", 
+    "nom_de_famille": "Chossy", 
+    "num_circo": 7
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -6193,6 +6501,55 @@
     "num_circo": 5
   }, 
   {
+    "mandat_fin": "2011-12-06", 
+    "profession": "Informaticien", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/yves-cochet/json", 
+    "nb_mandats": 1, 
+    "id": 349, 
+    "groupe_sigle": "GDR", 
+    "lieu_naissance": "Rennes (Ille-et-Vilaine)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "election comme représentant au parlement européen", 
+        "debut": "2007-06-20", 
+        "fin": "2011-12-06"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "GDR", 
+        "fin": "2011-12-06"
+      }
+    ], 
+    "nom": "Yves Cochet", 
+    "sites_web": [
+      {
+        "site": "http://www.yvescochet.net"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Paris", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "600", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/yves-cochet", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/885.asp", 
+    "date_naissance": "1946-02-15", 
+    "slug": "yves-cochet", 
+    "id_an": "885", 
+    "prenom": "Yves", 
+    "num_deptmt": "75", 
+    "nom_de_famille": "Cochet", 
+    "num_circo": 11
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Chargé de mission", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/gilles-cocquempot/json", 
@@ -6543,6 +6900,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2011-05-02"
       }, 
       {
@@ -6639,6 +7001,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2011-10-28"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Édouard Courtial", 
@@ -6904,6 +7271,96 @@
     "num_circo": 6
   }, 
   {
+    "mandat_fin": "2007-07-04", 
+    "profession": "Professeur de chirurgie digestive - Chirurgien des Hôpitaux de Paris", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/paul-henri-cugnenc/json", 
+    "nb_mandats": 1, 
+    "id": 40, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Thézan-lès-Béziers (Hérault)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2007-07-04"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-07-04"
+      }
+    ], 
+    "nom": "Paul-Henri Cugnenc", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Hérault", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/paul-henri-cugnenc", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267456.asp", 
+    "date_naissance": "1946-06-01", 
+    "slug": "paul-henri-cugnenc", 
+    "id_an": "267456", 
+    "prenom": "Paul-Henri", 
+    "num_deptmt": "34", 
+    "nom_de_famille": "Cugnenc", 
+    "num_circo": 6
+  }, 
+  {
+    "mandat_fin": "2010-06-11", 
+    "profession": "Ancien fonctionnaire du ministère de l'intérieur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/henri-cuq/json", 
+    "nb_mandats": 1, 
+    "id": 218, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Toulouse (Haute-Garonne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2010-06-11"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2010-06-11"
+      }
+    ], 
+    "nom": "Henri Cuq", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "85", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/henri-cuq", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/966.asp", 
+    "date_naissance": "1942-03-12", 
+    "slug": "henri-cuq", 
+    "id_an": "966", 
+    "prenom": "Henri", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Cuq", 
+    "num_circo": 9
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Professeur de faculté", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/frederic-cuvillier/json", 
@@ -6928,7 +7385,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Frédéric Cuvillier", 
@@ -7149,6 +7606,96 @@
     "num_deptmt": "59", 
     "nom_de_famille": "Daubresse", 
     "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2008-03-07", 
+    "profession": "Retraité de l'enseignement", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/michel-debet/json", 
+    "nb_mandats": 1, 
+    "id": 144, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Tocane-Saint-Apre (Dordogne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2008-03-07"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2008-03-07"
+      }
+    ], 
+    "nom": "Michel Debet", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Dordogne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/michel-debet", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/331339.asp", 
+    "date_naissance": "1944-10-12", 
+    "slug": "michel-debet", 
+    "id_an": "331339", 
+    "prenom": "Michel", 
+    "num_deptmt": "24", 
+    "nom_de_famille": "Debet", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2010-08-05", 
+    "profession": "Médecin", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/patrice-debray/json", 
+    "nb_mandats": 2, 
+    "id": 516, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Neuerburg (Allemagne)", 
+    "mandat_debut": "2008-04-19", 
+    "anciens_mandats": [
+      {
+        "motif": "reprise de l'exercice du mandat d'un ancien membre du gouvernement", 
+        "debut": "2008-04-19", 
+        "fin": "2010-08-05"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2008-04-19", 
+        "sigle": "NI", 
+        "fin": "2008-04-20"
+      }, 
+      {
+        "debut": "2008-04-21", 
+        "sigle": "UMP", 
+        "fin": "2010-08-05"
+      }
+    ], 
+    "nom": "Patrice Debray", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Haute-Saône", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "359", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/patrice-debray", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267309.asp", 
+    "date_naissance": "1951-01-25", 
+    "slug": "patrice-debray", 
+    "id_an": "267309", 
+    "prenom": "Patrice", 
+    "num_deptmt": "70", 
+    "nom_de_famille": "Debray", 
+    "num_circo": 1
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -7465,7 +8012,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Michèle Delaunay", 
@@ -7657,7 +8204,7 @@
       {
         "debut": "2007-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Sophie Delong", 
@@ -7725,6 +8272,51 @@
     "num_deptmt": "33", 
     "nom_de_famille": "Deluga", 
     "num_circo": 8
+  }, 
+  {
+    "mandat_fin": "2008-11-17", 
+    "profession": "Médecin", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-marie-demange/json", 
+    "nb_mandats": 1, 
+    "id": 433, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Toulouse (Haute-Garonne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2008-11-17"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2008-11-17"
+      }
+    ], 
+    "nom": "Jean-Marie Demange", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Moselle", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-marie-demange", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1068.asp", 
+    "date_naissance": "1943-07-23", 
+    "slug": "jean-marie-demange", 
+    "id_an": "1068", 
+    "prenom": "Jean-Marie", 
+    "num_deptmt": "57", 
+    "nom_de_famille": "Demange", 
+    "num_circo": 9
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -8348,10 +8940,10 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
-        "fin": "2007-07-19"
+        "fin": "2007-06-26"
       }, 
       {
-        "debut": "2007-07-20", 
+        "debut": "2007-06-27", 
         "sigle": "NC", 
         "fin": "2012-06-19"
       }
@@ -8643,7 +9235,7 @@
       {
         "debut": "2010-12-15", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Olivier Dosne", 
@@ -9115,11 +9707,6 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
-        "sigle": "NI", 
         "fin": "2012-06-19"
       }
     ], 
@@ -9352,7 +9939,7 @@
       {
         "debut": "2010-12-15", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Paul Durieu", 
@@ -9518,6 +10105,51 @@
     "num_deptmt": "07", 
     "nom_de_famille": "Dussopt", 
     "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2008-09-16", 
+    "profession": "Maître des requêtes au conseil d'Etat", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/renaud-dutreil/json", 
+    "nb_mandats": 1, 
+    "id": 295, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Chambéry (Savoie)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission", 
+        "debut": "2007-06-20", 
+        "fin": "2008-09-16"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2008-09-16"
+      }
+    ], 
+    "nom": "Renaud Dutreil", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Marne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/renaud-dutreil", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1236.asp", 
+    "date_naissance": "1960-06-12", 
+    "slug": "renaud-dutreil", 
+    "id_an": "1236", 
+    "prenom": "Renaud", 
+    "num_deptmt": "51", 
+    "nom_de_famille": "Dutreil", 
+    "num_circo": 1
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -10239,7 +10871,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Aurélie Filippetti", 
@@ -10333,7 +10965,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Geneviève Fioraso", 
@@ -10717,7 +11349,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Valérie Fourneyron", 
@@ -10789,6 +11421,51 @@
     "num_deptmt": "74", 
     "nom_de_famille": "Francina", 
     "num_circo": 5
+  }, 
+  {
+    "mandat_fin": "2010-04-01", 
+    "profession": "Enseignante", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/arlette-franco/json", 
+    "nb_mandats": 3, 
+    "id": 4, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Perpignan (Pyrénées-Orientales)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2010-04-01"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2010-04-01"
+      }
+    ], 
+    "nom": "Arlette Franco", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Pyrénées-Orientales", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "145", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/arlette-franco", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/267350.asp", 
+    "date_naissance": "1939-10-01", 
+    "slug": "arlette-franco", 
+    "id_an": "267350", 
+    "prenom": "Arlette", 
+    "num_deptmt": "66", 
+    "nom_de_famille": "Franco", 
+    "num_circo": 2
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -11386,6 +12063,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2008-12-09"
       }, 
       {
@@ -13062,6 +13744,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2011-07-29"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Claude Greff", 
@@ -13133,6 +13820,60 @@
     "num_deptmt": "79", 
     "nom_de_famille": "Grellier", 
     "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2011-05-17", 
+    "profession": "Métallurgiste", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/maxime-gremetz/json", 
+    "nb_mandats": 2, 
+    "id": 395, 
+    "groupe_sigle": "NI", 
+    "lieu_naissance": "Canchy (Somme)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission", 
+        "debut": "2007-06-20", 
+        "fin": "2011-05-17"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "GDR", 
+        "fin": "2011-04-11"
+      }, 
+      {
+        "debut": "2011-04-12", 
+        "sigle": "NI", 
+        "fin": "2011-05-17"
+      }
+    ], 
+    "nom": "Maxime Gremetz", 
+    "sites_web": [
+      {
+        "site": "http://www.maxime-gremetz.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Somme", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "595", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/maxime-gremetz", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1548.asp", 
+    "date_naissance": "1940-09-03", 
+    "slug": "maxime-gremetz", 
+    "id_an": "1548", 
+    "prenom": "Maxime", 
+    "num_deptmt": "80", 
+    "nom_de_famille": "Gremetz", 
+    "num_circo": 1
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -13455,7 +14196,7 @@
       {
         "debut": "2010-12-15", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Pascale Gruny", 
@@ -13759,6 +14500,55 @@
     "prenom": "Françoise", 
     "num_deptmt": "76", 
     "nom_de_famille": "Guégot", 
+    "num_circo": 2
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Praticien hospitalier", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/catherine-genisson/json", 
+    "nb_mandats": 2, 
+    "id": 86, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Paris (75)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "élection au sénat", 
+        "debut": "2007-06-20", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "Catherine Génisson", 
+    "sites_web": [
+      {
+        "site": "http://www.catherine-genisson.fr"
+      }
+    ], 
+    "sexe": "F", 
+    "nom_circo": "Pas-de-Calais", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "496", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/catherine-genisson", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1452.asp", 
+    "date_naissance": "1949-04-22", 
+    "slug": "catherine-genisson", 
+    "id_an": "1452", 
+    "prenom": "Catherine", 
+    "num_deptmt": "62", 
+    "nom_de_famille": "Génisson", 
     "num_circo": 2
   }, 
   {
@@ -15166,7 +15956,7 @@
       {
         "debut": "2007-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Paul Jeanneteau", 
@@ -15429,7 +16219,17 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2008-04-19"
+      }, 
+      {
+        "debut": "2010-08-05", 
+        "sigle": "NI", 
+        "fin": "2010-08-31"
       }, 
       {
         "debut": "2010-09-01", 
@@ -16169,6 +16969,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2011-07-29"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Marc Laffineur", 
@@ -16458,7 +17263,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "François Lamy", 
@@ -16498,7 +17303,7 @@
       {
         "debut": "2011-07-30", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Raymond Lancelin", 
@@ -16587,6 +17392,16 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-12-11"
+      }, 
+      {
+        "debut": "2007-12-12", 
+        "sigle": "NC", 
         "fin": "2008-09-17"
       }, 
       {
@@ -16729,11 +17544,6 @@
     "groupes_historique": [
       {
         "debut": "2007-06-20", 
-        "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
         "sigle": "NI", 
         "fin": "2012-06-19"
       }
@@ -17218,6 +18028,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2009-01-13"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Bruno Le Maire", 
@@ -17236,6 +18051,50 @@
     "num_deptmt": "27", 
     "nom_de_famille": "Le Maire", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2010-08-05", 
+    "profession": null, 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/colette-le-moal/json", 
+    "nb_mandats": 2, 
+    "id": 377, 
+    "groupe_sigle": "NC", 
+    "lieu_naissance": "Paris (75)", 
+    "mandat_debut": "2008-04-19", 
+    "anciens_mandats": [
+      {
+        "motif": "reprise de l'exercice du mandat d'un ancien membre du gouvernement", 
+        "debut": "2008-04-19", 
+        "fin": "2010-08-05"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2008-04-19", 
+        "sigle": "NC", 
+        "fin": "2010-08-05"
+      }
+    ], 
+    "nom": "Colette Le Moal", 
+    "sites_web": [
+      {
+        "site": "http://www.colette-lemoal.fr"
+      }
+    ], 
+    "sexe": "F", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "403", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/colette-le-moal", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/288865.asp", 
+    "date_naissance": "1932-03-27", 
+    "slug": "colette-le-moal", 
+    "id_an": "288865", 
+    "prenom": "Colette", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Le Moal", 
+    "num_circo": 3
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -17409,7 +18268,7 @@
       {
         "debut": "2011-10-29", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Dominique Le Sourd", 
@@ -17454,7 +18313,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Marylise Lebranchu", 
@@ -17780,7 +18639,7 @@
       {
         "debut": "2009-01-13", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Guy Lefrand", 
@@ -17875,6 +18734,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2009-07-23"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Pierre Lellouche", 
@@ -18059,6 +18923,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2011-07-29"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Jean Leonetti", 
@@ -18243,6 +19112,11 @@
         "debut": "2007-06-27", 
         "sigle": "NC", 
         "fin": "2010-12-15"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Maurice Leroy", 
@@ -18504,6 +19378,55 @@
     "num_circo": 1
   }, 
   {
+    "mandat_fin": "2010-12-14", 
+    "profession": "Directeur financier", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/michel-lezeau/json", 
+    "nb_mandats": 1, 
+    "id": 584, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Orléans (Loiret)", 
+    "mandat_debut": "2007-07-20", 
+    "anciens_mandats": [
+      {
+        "motif": "reprise de l'exercice du mandat d'un ancien membre du gouvernement", 
+        "debut": "2007-07-20", 
+        "fin": "2010-12-14"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-07-20", 
+        "sigle": "NI", 
+        "fin": "2007-07-23"
+      }, 
+      {
+        "debut": "2007-07-24", 
+        "sigle": "UMP", 
+        "fin": "2010-12-14"
+      }
+    ], 
+    "nom": "Michel Lezeau", 
+    "sites_web": [
+      {
+        "site": "http://www.michel-lezeau.com"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Indre-et-Loire", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "59", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/michel-lezeau", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267283.asp", 
+    "date_naissance": "1942-12-20", 
+    "slug": "michel-lezeau", 
+    "id_an": "267283", 
+    "prenom": "Michel", 
+    "num_deptmt": "37", 
+    "nom_de_famille": "Lezeau", 
+    "num_circo": 4
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Inspecteur des affaires sanitaires et sociales", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/michel-liebgott/json", 
@@ -18692,6 +19615,51 @@
     "num_circo": 4
   }, 
   {
+    "mandat_fin": "2011-11-26", 
+    "profession": "Ingénieur en chef des mines", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francois-loos/json", 
+    "nb_mandats": 2, 
+    "id": 316, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Strasbourg (Bas-Rhin)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission", 
+        "debut": "2007-06-20", 
+        "fin": "2011-11-26"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-11-26"
+      }
+    ], 
+    "nom": "François Loos", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Bas-Rhin", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "162", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francois-loos", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/1994.asp", 
+    "date_naissance": "1953-12-24", 
+    "slug": "francois-loos", 
+    "id_an": "1994", 
+    "prenom": "François", 
+    "num_deptmt": "67", 
+    "nom_de_famille": "Loos", 
+    "num_circo": 9
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Imprimeur", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/gerard-lorgeoux/json", 
@@ -18862,7 +19830,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Victorin Lurel", 
@@ -19537,7 +20505,7 @@
       {
         "debut": "2007-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Jean-Pierre Marcon", 
@@ -19583,6 +20551,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2010-12-15"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Thierry Mariani", 
@@ -19948,6 +20921,51 @@
     "num_circo": 4
   }, 
   {
+    "mandat_fin": "2008-09-18", 
+    "profession": "Ingénieur", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-marsaudon/json", 
+    "nb_mandats": 1, 
+    "id": 82, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Paris (75)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2008-09-18"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2008-09-18"
+      }
+    ], 
+    "nom": "Jean Marsaudon", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Essonne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-marsaudon", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2090.asp", 
+    "date_naissance": "1946-05-03", 
+    "slug": "jean-marsaudon", 
+    "id_an": "2090", 
+    "prenom": "Jean", 
+    "num_deptmt": "91", 
+    "nom_de_famille": "Marsaudon", 
+    "num_circo": 7
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Cadre administratif", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/patrice-martin-lalande/json", 
@@ -20228,6 +21246,51 @@
     "num_deptmt": "57", 
     "nom_de_famille": "Marty", 
     "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2009-08-06", 
+    "profession": "Ingénieur conseil", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jacques-masdeu-arus/json", 
+    "nb_mandats": 1, 
+    "id": 578, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Paris (75)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "déchéance sur décision du conseil constitutionnel", 
+        "debut": "2007-06-20", 
+        "fin": "2009-08-06"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2009-08-06"
+      }
+    ], 
+    "nom": "Jacques Masdeu-Arus", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jacques-masdeu-arus", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2107.asp", 
+    "date_naissance": "1942-08-07", 
+    "slug": "jacques-masdeu-arus", 
+    "id_an": "2107", 
+    "prenom": "Jacques", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Masdeu-Arus", 
+    "num_circo": 12
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -20535,7 +21598,7 @@
       {
         "debut": "2010-04-23", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Gérard Menuel", 
@@ -20748,6 +21811,55 @@
     "num_circo": 6
   }, 
   {
+    "mandat_fin": "2010-03-01", 
+    "profession": "Juriste", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/didier-migaud/json", 
+    "nb_mandats": 3, 
+    "id": 250, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Tours-Saint-Symphorien (Indre-et-Loire)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission", 
+        "debut": "2007-06-20", 
+        "fin": "2010-03-01"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2010-03-01"
+      }
+    ], 
+    "nom": "Didier Migaud", 
+    "sites_web": [
+      {
+        "site": "http://www.didiermigaud.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Isère", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "514", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/didier-migaud", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2189.asp", 
+    "date_naissance": "1952-06-06", 
+    "slug": "didier-migaud", 
+    "id_an": "2189", 
+    "prenom": "Didier", 
+    "num_deptmt": "38", 
+    "nom_de_famille": "Migaud", 
+    "num_circo": 4
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Ancien chef d'entreprise", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-claude-mignon/json", 
@@ -20915,7 +22027,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Arnaud Montebourg", 
@@ -20987,6 +22099,51 @@
     "num_deptmt": "78", 
     "nom_de_famille": "Morange", 
     "num_circo": 6
+  }, 
+  {
+    "mandat_fin": "2008-04-19", 
+    "profession": "Responsable de la communication du parc naturel régional de Lorraine", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/nadine-morano/json", 
+    "nb_mandats": 1, 
+    "id": 38, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Nancy (Meurthe-et-Moselle)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "nomination comme membre du gouvernement", 
+        "debut": "2007-06-20", 
+        "fin": "2008-04-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2008-04-19"
+      }
+    ], 
+    "nom": "Nadine Morano", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Meurthe-et-Moselle", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/nadine-morano", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267553.asp", 
+    "date_naissance": "1963-11-06", 
+    "slug": "nadine-morano", 
+    "id_an": "267553", 
+    "prenom": "Nadine", 
+    "num_deptmt": "54", 
+    "nom_de_famille": "Morano", 
+    "num_circo": 5
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -21062,7 +22219,7 @@
       {
         "debut": "2008-04-21", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Philippe Morenvillier", 
@@ -21220,7 +22377,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Pierre Moscovici", 
@@ -21992,6 +23149,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2007-07-19"
       }, 
       {
@@ -22114,6 +23276,55 @@
     "num_deptmt": "22", 
     "nom_de_famille": "Oget", 
     "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2011-05-04", 
+    "profession": "Chargée de mission auprès d'une collectivité territoriale", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francoise-olivier-coupeau/json", 
+    "nb_mandats": 1, 
+    "id": 480, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Laval (Mayenne)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2011-05-04"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2011-05-04"
+      }
+    ], 
+    "nom": "Françoise Olivier-Coupeau", 
+    "sites_web": [
+      {
+        "site": "http://www.francoise-olivier-coupeau.net"
+      }
+    ], 
+    "sexe": "F", 
+    "nom_circo": "Morbihan", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "494", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francoise-olivier-coupeau", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/333494.asp", 
+    "date_naissance": "1959-07-03", 
+    "slug": "francoise-olivier-coupeau", 
+    "id_an": "333494", 
+    "prenom": "Françoise", 
+    "num_deptmt": "56", 
+    "nom_de_famille": "Olivier-Coupeau", 
+    "num_circo": 5
   }, 
   {
     "mandat_fin": "2010-12-15", 
@@ -22471,7 +23682,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "George Pau-Langevin", 
@@ -22668,6 +23879,11 @@
         "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2007-07-19"
+      }, 
+      {
+        "debut": "2012-06-17", 
+        "sigle": "NI", 
+        "fin": "2012-06-19"
       }
     ], 
     "nom": "Valérie Pecresse", 
@@ -22735,6 +23951,51 @@
     "num_deptmt": "24", 
     "nom_de_famille": "Peiro", 
     "num_circo": 4
+  }, 
+  {
+    "mandat_fin": "2007-11-29", 
+    "profession": "Chef d'entreprise", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/philippe-pemezec/json", 
+    "nb_mandats": 1, 
+    "id": 540, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Granville (Manche)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "annulation de l'élection sur décision du conseil constitutionnel", 
+        "debut": "2007-06-20", 
+        "fin": "2007-11-29"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2007-11-29"
+      }
+    ], 
+    "nom": "Philippe Pemezec", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Hauts-de-Seine", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/philippe-pemezec", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/267872.asp", 
+    "date_naissance": "1955-09-25", 
+    "slug": "philippe-pemezec", 
+    "id_an": "267872", 
+    "prenom": "Philippe", 
+    "num_deptmt": "92", 
+    "nom_de_famille": "Pemezec", 
+    "num_circo": 12
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -22998,7 +24259,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Sylvia Pinel", 
@@ -23516,6 +24777,51 @@
     "num_circo": 6
   }, 
   {
+    "mandat_fin": "2011-03-28", 
+    "profession": "Directeur de société", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/daniel-poulou/json", 
+    "nb_mandats": 1, 
+    "id": 603, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Biarritz (Pyrénées-Atlantiques)", 
+    "mandat_debut": "2007-07-20", 
+    "anciens_mandats": [
+      {
+        "motif": "reprise de l'exercice du mandat d'un ancien membre du gouvernement", 
+        "debut": "2007-07-20", 
+        "fin": "2011-03-28"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-07-20", 
+        "sigle": "NI", 
+        "fin": "2007-07-23"
+      }, 
+      {
+        "debut": "2007-07-24", 
+        "sigle": "UMP", 
+        "fin": "2011-03-28"
+      }
+    ], 
+    "nom": "Daniel Poulou", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Pyrénées-Atlantiques", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "85", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/daniel-poulou", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/2463.asp", 
+    "date_naissance": "1943-07-28", 
+    "slug": "daniel-poulou", 
+    "id_an": "2463", 
+    "prenom": "Daniel", 
+    "num_deptmt": "64", 
+    "nom_de_famille": "Poulou", 
+    "num_circo": 6
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Infirmière", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/anny-poursinoff/json", 
@@ -23534,7 +24840,7 @@
     "groupes_historique": [
       {
         "debut": "2010-07-12", 
-        "sigle": "NI", 
+        "sigle": "GDR", 
         "fin": "2011-12-07"
       }, 
       {
@@ -23563,6 +24869,55 @@
     "num_deptmt": "78", 
     "nom_de_famille": "Poursinoff", 
     "num_circo": 10
+  }, 
+  {
+    "mandat_fin": "2011-09-30", 
+    "profession": "Directrice commerciale", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/sophie-primas/json", 
+    "nb_mandats": 3, 
+    "id": 623, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Saint-Mandé (Val-de-Marne)", 
+    "mandat_debut": "2010-06-11", 
+    "anciens_mandats": [
+      {
+        "motif": "élection au sénat", 
+        "debut": "2010-06-11", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2010-06-11", 
+        "sigle": "NI", 
+        "fin": "2010-06-15"
+      }, 
+      {
+        "debut": "2010-06-16", 
+        "sigle": "UMP", 
+        "fin": "2011-09-30"
+      }
+    ], 
+    "nom": "Sophie Primas", 
+    "sites_web": [
+      {
+        "site": "http://www.sophie-primas.fr"
+      }
+    ], 
+    "sexe": "F", 
+    "nom_circo": "Yvelines", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "47", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/sophie-primas", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/345916.asp", 
+    "date_naissance": "1962-06-07", 
+    "slug": "sophie-primas", 
+    "id_an": "345916", 
+    "prenom": "Sophie", 
+    "num_deptmt": "78", 
+    "nom_de_famille": "Primas", 
+    "num_circo": 9
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -24152,10 +25507,10 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
-        "fin": "2008-02-17"
+        "fin": "2007-06-26"
       }, 
       {
-        "debut": "2008-02-18", 
+        "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2012-06-19"
       }
@@ -24201,7 +25556,7 @@
       {
         "debut": "2011-07-30", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Joël Regnault", 
@@ -24649,6 +26004,100 @@
     "num_deptmt": "77", 
     "nom_de_famille": "Riester", 
     "num_circo": 5
+  }, 
+  {
+    "mandat_fin": "2011-12-06", 
+    "profession": null, 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/jean-roatta/json", 
+    "nb_mandats": 2, 
+    "id": 202, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Marseille (Bouches-du-Rhône)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "election comme représentant au parlement européen", 
+        "debut": "2007-06-20", 
+        "fin": "2011-12-06"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2011-12-06"
+      }
+    ], 
+    "nom": "Jean Roatta", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Bouches-du-Rhône", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "80", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/jean-roatta", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/2580.asp", 
+    "date_naissance": "1941-12-13", 
+    "slug": "jean-roatta", 
+    "id_an": "2580", 
+    "prenom": "Jean", 
+    "num_deptmt": "13", 
+    "nom_de_famille": "Roatta", 
+    "num_circo": 3
+  }, 
+  {
+    "mandat_fin": "2010-11-13", 
+    "profession": "Cadre administratif (collaborateur de cabinet)", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/didier-robert/json", 
+    "nb_mandats": 4, 
+    "id": 408, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Saint-Pierre (Réunion)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "prolongation de mission temporaire", 
+        "debut": "2007-06-20", 
+        "fin": "2010-11-13"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2010-11-13"
+      }
+    ], 
+    "nom": "Didier Robert", 
+    "sites_web": [
+      {
+        "site": "http://www.didierrobert.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Réunion", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "242", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/didier-robert", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/337544.asp", 
+    "date_naissance": "1964-04-26", 
+    "slug": "didier-robert", 
+    "id_an": "337544", 
+    "prenom": "Didier", 
+    "num_deptmt": "974", 
+    "nom_de_famille": "Robert", 
+    "num_circo": 3
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -25107,7 +26556,7 @@
       {
         "debut": "2011-07-30", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Michel Rossi", 
@@ -25406,6 +26855,55 @@
     "num_circo": 4
   }, 
   {
+    "mandat_fin": "2011-05-02", 
+    "profession": "Enseignant", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/patrick-roy/json", 
+    "nb_mandats": 2, 
+    "id": 509, 
+    "groupe_sigle": "SRC", 
+    "lieu_naissance": "Denain (Nord)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "décès", 
+        "debut": "2007-06-20", 
+        "fin": "2011-05-02"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2011-05-02"
+      }
+    ], 
+    "nom": "Patrick Roy", 
+    "sites_web": [
+      {
+        "site": "http://www.patrick-roy.fr"
+      }
+    ], 
+    "sexe": "H", 
+    "nom_circo": "Nord", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "550", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/patrick-roy", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/267768.asp", 
+    "date_naissance": "1957-08-30", 
+    "slug": "patrick-roy", 
+    "id_an": "267768", 
+    "prenom": "Patrick", 
+    "num_deptmt": "59", 
+    "nom_de_famille": "Roy", 
+    "num_circo": 19
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Assistant parlementaire", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francois-de-rugy/json", 
@@ -25688,6 +27186,50 @@
     "num_circo": 3
   }, 
   {
+    "mandat_fin": "2011-06-30", 
+    "profession": "Contractuelle de la fonction publique territoriale", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francoise-de-salvador/json", 
+    "nb_mandats": 1, 
+    "id": 619, 
+    "groupe_sigle": "UMP", 
+    "lieu_naissance": "Paris (75)", 
+    "mandat_debut": "2010-04-23", 
+    "anciens_mandats": [
+      {
+        "motif": "reprise de l'exercice du mandat d'un ancien membre du gouvernement", 
+        "debut": "2010-04-23", 
+        "fin": "2011-06-30"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2010-04-23", 
+        "sigle": "UMP", 
+        "fin": "2011-06-30"
+      }
+    ], 
+    "nom": "Françoise De Salvador", 
+    "sites_web": [
+      {
+        "site": "http://www.fdesalvador.eu"
+      }
+    ], 
+    "sexe": "F", 
+    "nom_circo": "Essonne", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": "370", 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francoise-de-salvador", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/346712.asp", 
+    "date_naissance": "1952-07-18", 
+    "slug": "francoise-de-salvador", 
+    "id_an": "346712", 
+    "prenom": "Françoise De", 
+    "num_deptmt": "91", 
+    "nom_de_famille": "Salvador", 
+    "num_circo": 9
+  }, 
+  {
     "mandat_fin": "2012-06-19", 
     "profession": "Permanent politique", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/bruno-sandras/json", 
@@ -25866,7 +27408,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Michel Sapin", 
@@ -25885,6 +27427,51 @@
     "num_deptmt": "36", 
     "nom_de_famille": "Sapin", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2008-02-07", 
+    "profession": "Vétérinaire", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/joel-sarlot/json", 
+    "nb_mandats": 1, 
+    "id": 131, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Belfort (Territoire-de-Belfort)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission d'office sur décision du conseil constitutionnel", 
+        "debut": "2007-06-20", 
+        "fin": "2008-02-07"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
+        "fin": "2008-02-07"
+      }
+    ], 
+    "nom": "Joël Sarlot", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Vendée", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/joel-sarlot", 
+    "url_an": "http://www.assemblee-nationale.fr/13/tribun/fiches_id/2681.asp", 
+    "date_naissance": "1946-07-05", 
+    "slug": "joel-sarlot", 
+    "id_an": "2681", 
+    "prenom": "Joël", 
+    "num_deptmt": "85", 
+    "nom_de_famille": "Sarlot", 
+    "num_circo": 5
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -26420,11 +28007,6 @@
       {
         "debut": "2008-04-13", 
         "sigle": "NI", 
-        "fin": "2008-04-13"
-      }, 
-      {
-        "debut": "2008-04-14", 
-        "sigle": "NI", 
         "fin": "2012-06-19"
       }
     ], 
@@ -26542,6 +28124,51 @@
     "num_deptmt": "68", 
     "nom_de_famille": "Straumann", 
     "num_circo": 1
+  }, 
+  {
+    "mandat_fin": "2007-10-19", 
+    "profession": "Professeur d'Université", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/dominique-strauss-kahn/json", 
+    "nb_mandats": 1, 
+    "id": 111, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Neuilly-sur-Seine (Hauts-de-Seine)", 
+    "mandat_debut": "2007-06-20", 
+    "anciens_mandats": [
+      {
+        "motif": "démission", 
+        "debut": "2007-06-20", 
+        "fin": "2007-10-19"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2007-06-20", 
+        "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "SRC", 
+        "fin": "2007-10-19"
+      }
+    ], 
+    "nom": "Dominique Strauss-Kahn", 
+    "sites_web": [], 
+    "sexe": "H", 
+    "nom_circo": "Val-d'Oise", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/dominique-strauss-kahn", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/2769.asp", 
+    "date_naissance": "1949-04-25", 
+    "slug": "dominique-strauss-kahn", 
+    "id_an": "2769", 
+    "prenom": "Dominique", 
+    "num_deptmt": "95", 
+    "nom_de_famille": "Strauss-Kahn", 
+    "num_circo": 8
   }, 
   {
     "mandat_fin": "2012-06-19", 
@@ -26711,7 +28338,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Christiane Taubira", 
@@ -27185,7 +28812,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Marisol Touraine", 
@@ -27332,6 +28959,11 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
+        "fin": "2007-06-26"
+      }, 
+      {
+        "debut": "2007-06-27", 
+        "sigle": "UMP", 
         "fin": "2010-04-23"
       }, 
       {
@@ -27558,6 +29190,46 @@
     "num_circo": 1
   }, 
   {
+    "mandat_fin": "2008-06-26", 
+    "profession": "Retraitée de l'Education nationale", 
+    "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/francoise-vallet/json", 
+    "nb_mandats": 1, 
+    "id": 227, 
+    "groupe_sigle": null, 
+    "lieu_naissance": "Luisant (Eure-et-Loir)", 
+    "mandat_debut": "2008-02-04", 
+    "anciens_mandats": [
+      {
+        "motif": "annulation de l'élection sur décision du conseil constitutionnel", 
+        "debut": "2008-02-04", 
+        "fin": "2008-06-26"
+      }
+    ], 
+    "groupes_historique": [
+      {
+        "debut": "2008-02-04", 
+        "sigle": "SRC", 
+        "fin": "2008-06-26"
+      }
+    ], 
+    "nom": "Françoise Vallet", 
+    "sites_web": [], 
+    "sexe": "F", 
+    "nom_circo": "Eure-et-Loir", 
+    "parti_ratt_financier": "", 
+    "ancien_depute": 1, 
+    "place_en_hemicycle": null, 
+    "url_nosdeputes": "https://2007-2012.nosdeputes.fr/francoise-vallet", 
+    "url_an": "http://www.assembleenationale.fr/13/tribun/fiches_id/408269.asp", 
+    "date_naissance": "1949-06-03", 
+    "slug": "francoise-vallet", 
+    "id_an": "408269", 
+    "prenom": "Françoise", 
+    "num_deptmt": "28", 
+    "nom_de_famille": "Vallet", 
+    "num_circo": 1
+  }, 
+  {
     "mandat_fin": "2011-09-30", 
     "profession": "Avocat", 
     "url_nosdeputes_api": "https://2007-2012.nosdeputes.fr/andre-vallini/json", 
@@ -27627,7 +29299,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Manuel Valls", 
@@ -27716,7 +29388,7 @@
       {
         "debut": "2007-07-24", 
         "sigle": "UMP", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Yves Vandewalle", 
@@ -28238,10 +29910,10 @@
       {
         "debut": "2007-06-20", 
         "sigle": "NI", 
-        "fin": "2008-11-27"
+        "fin": "2007-06-26"
       }, 
       {
-        "debut": "2008-11-28", 
+        "debut": "2007-06-27", 
         "sigle": "UMP", 
         "fin": "2012-06-19"
       }
@@ -28292,7 +29964,7 @@
       {
         "debut": "2007-06-27", 
         "sigle": "SRC", 
-        "fin": "2012-06-19"
+        "fin": "2012-06-16"
       }
     ], 
     "nom": "Alain Vidalies", 
@@ -28384,11 +30056,6 @@
     "groupes_historique": [
       {
         "debut": "2007-06-20", 
-        "sigle": "NI", 
-        "fin": "2007-06-26"
-      }, 
-      {
-        "debut": "2007-06-27", 
         "sigle": "NI", 
         "fin": "2012-06-19"
       }
