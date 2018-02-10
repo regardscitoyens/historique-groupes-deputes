@@ -45,11 +45,11 @@
 
 - [X] generate sql commands by MP by period to fill _groupe_acronyme for authored object with date included
 
-- [ ] check objects with info not filled
+- [X] check objects with info not filled
   + [X] 2007-2012
-  + [ ] 2012-2017
+  + [X] 2012-2017
 
-- [ ] run sql in prod
+- [ ] run sql in prod and check objects again
 
 - [ ] use fields in API
 
