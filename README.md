@@ -49,7 +49,7 @@
   + [X] 2007-2012
   + [X] 2012-2017
 
-- [ ] run sql in prod and check objects again
+- [X] run sql in prod and check objects again
 
 - [ ] use fields in API
 
