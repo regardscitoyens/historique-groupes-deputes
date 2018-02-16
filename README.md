@@ -51,7 +51,7 @@
 
 - [X] run sql in prod and check objects again
 
-- [ ] use fields in API
+- [X] use fields in API
 
 - [ ] generate sql commands to set last groupe to all MPs ?
 
