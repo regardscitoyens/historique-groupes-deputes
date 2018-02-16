@@ -53,6 +53,4 @@
 
 - [X] use fields in API
 
-- [ ] generate sql commands to set last groupe to all MPs ?
-
 - [ ] build data repartition_deputes by day
