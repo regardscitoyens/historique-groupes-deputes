@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os, sys, csv, json, re
-from pprint import pprint
+import requests
 from datetime import date, datetime, timedelta
 
 def parse_date(dat):
@@ -15,6 +15,9 @@ def substract_day(dat, days=1):
     dat = datetime.strptime(dat, "%Y-%m-%d").date()
     d = dat - timedelta(days=days)
     return d.isoformat()
+
+def add_day(dat, days=1):
+    return substract_day(dat, days=-days)
 
 def close_dates(d1, d2, delay=4):
     if not d1 or not d2:
@@ -31,14 +34,23 @@ def parse_ancien_mandat(mandat, leg_end):
       "motif": m[2]
     }
 
-def load_deputes(data, leg):
+def load_deputes(data=None, leg=15):
+    if data is None:
+        try:
+            data = requests.get("https://www.nosdeputes.fr/deputes/json").json()["deputes"]
+            with open(os.path.join("data", "deputes-leg%s.json" % leg), "w") as jsonf:
+                json.dump({"deputes": data}, jsonf)
+        except Exception as e:
+            print >> sys.stderr, "ERROR: impossible to read ND's API json data at https://www.nosdeputes.fr/deputes/json"
+            print >> sys.stderr, "%s: %s" % (type(e), e)
+            sys.exit(1)
     leg_start = "%d-06-20" % (leg * 5 + 1942)
     leg_end = ("%d-06-%s" % (leg * 5 + 1947, leg + 6)).decode("utf-8")
     deputes = {}
     slugs = {}
     for depute in data:
         dep = depute["depute"]
-        if not dep["mandat_fin"]:
+        if not dep.get("mandat_fin"):
             dep["mandat_fin"] = leg_end
         anciens = [
           parse_ancien_mandat(a["mandat"], leg_end)
@@ -153,10 +165,11 @@ def parse_listes_quotidiennes(data, deputes):
     return results
 
 def read_opendata_an(data, leg, deputes):
+    leg = str(leg)
     lg = int(leg)
     leg_end = ("%d-06-%s" % (lg * 5 + 1947, lg + 6)).decode("utf-8")
     re_clean_libelle = re.compile(r"\W")
-    clean_libelle = lambda x: re_clean_libelle.sub("", x).replace("LESREP", "LR")
+    clean_libelle = lambda x: re_clean_libelle.sub("", x).replace("LESREP", "LR").replace("LAREM", "LREM").replace("FI", "LFI").replace("UDIAGIR", "UAI")
     sort_periods = lambda x: "%s-%s" % (x["debut"], x["fin"])
 
     organes = {}
@@ -200,7 +213,7 @@ def read_opendata_an(data, leg, deputes):
             print "WARNING, skipping député with no gpe", nom, groupes, mandats
             continue
         # fix bad data AN
-        if pid == "OMC_PA1205":
+        if pid == "OMC_PA1205" and leg == 13:
             groupes[0]["fin"] = "2007-06-26"
         if groupes[0]["debut"] > mandats[0]["debut"] and groupes[0]["sigle"] != "NI":
             groupes.insert(0, {
