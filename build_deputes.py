@@ -5,6 +5,11 @@ import os, sys, csv, json, re
 import requests
 from datetime import date, datetime, timedelta
 
+def force_array(x):
+    if type(x) is not list:
+        return [x]
+    return x
+
 def parse_date(dat):
     if not dat:
         return None
@@ -191,7 +196,7 @@ def read_opendata_an(data, leg, deputes):
             "debut": m["mandature"]["datePriseFonction"],
             "fin": m["dateFin"],
             "motif": m["mandature"]["causeFin"] or m["election"]["causeMandat"]
-          } for m in parl["mandats"]["mandat"]
+          } for m in force_array(parl["mandats"]["mandat"])
           if m["@xsi:type"] == "MandatParlementaire_type"
           and m["legislature"] == leg
           and m["mandature"]["datePriseFonction"]
@@ -203,7 +208,7 @@ def read_opendata_an(data, leg, deputes):
             "sigle": organes[m["organes"]["organeRef"]]["sigle"],
             "debut": m["dateDebut"],
             "fin": m["dateFin"]
-          } for m in parl["mandats"]["mandat"]
+          } for m in force_array(parl["mandats"]["mandat"])
           if m["typeOrgane"] == "GP"
           and m["legislature"] == leg
           and m["preseance"] != "1"
